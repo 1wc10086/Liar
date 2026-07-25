@@ -1,0 +1,24 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".deflate"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Level",
+            "type": "string",
+            "required": false,
+            "default": "9",
+            "language": "compress_level"
+        }
+    ]
+}

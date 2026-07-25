@@ -1,0 +1,43 @@
+{
+    "parameters": [
+        {
+            "name": "RTONFile",
+            "type": "path",
+            "extensions": [
+                ".rton"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "JSONFile",
+            "type": "path",
+            "extensions": [
+                ".json"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Encrypted",
+            "type": "boolean",
+            "default": "false",
+            "language": "encrypted"
+        },
+        {
+            "name": "Key",
+            "type": "string",
+            "ui_no": "!Encrypted",
+            "default": "com_popcap_pvz2_magento_product_2013_05_05",
+            "language": "option_rton_crypt_key"
+        },
+        {
+            "name": "StringEncoding",
+            "type": "list",
+            "default": "UTF8",
+            "list": [
+                "UTF8",
+                "EASCII"
+            ],
+            "language": "string_encoding"
+        }
+    ]
+}

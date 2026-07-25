@@ -1,0 +1,69 @@
+{
+  "parameters": [
+    {
+      "name": "InputFile",
+      "type": "path",
+      "language": "input_file"
+    },
+    {
+      "name": "OutputFile",
+      "type": "path",
+      "language": "output_file",
+      "extensions": [".bin"]
+    },
+    {
+      "name": "Mode",
+      "type": "list",
+      "required": false,
+      "language": "mode",
+      "default": 1,
+      "list": ["0", "1", "2"],
+      "map": {
+        "0": "ECB",
+        "1": "CBC",
+        "2": "CFB"
+      }
+    },
+    {
+      "name": "BlockSize",
+      "type": "list",
+      "required": false,
+      "language": "block_size",
+      "default": 16,
+      "list": ["16", "24", "32"]
+    },
+    {
+      "name": "KeySize",
+      "type": "list",
+      "required": false,
+      "language": "key_size",
+      "default": 32,
+      "list": ["16", "24", "32"]
+    },
+    {
+      "name": "Key",
+      "type": "string",
+      "required": true,
+      "language": "key"
+    },
+    {
+      "name": "IV",
+      "type": "string",
+      "required": false,
+      "language": "iv",
+      "default": ""
+    },
+    {
+      "name": "Padding",
+      "type": "list",
+      "required": false,
+      "language": "padding",
+      "default": 1,
+      "list": ["0", "1"],
+      "map": {
+        "0": "PKCS7",
+        "1": "ZERO"
+      }
+    }
+  ]
+}

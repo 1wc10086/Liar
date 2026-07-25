@@ -1,0 +1,46 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".xml.compiled",
+                ".xnb"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".json"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Format",
+            "type": "list",
+            "list": [
+                "PC",
+                "Phone32",
+                "Phone64",
+                "TV",
+                "GameConsole",
+                "WP"
+            ],
+            "language": "format"
+        },
+        {
+            "name": "UseXml",
+            "type": "boolean",
+            "default": "false",
+            "language": "use_xml"
+        },
+        {
+            "name": "UseZlib",
+            "type": "boolean",
+            "default": "true",
+            "language": "use_zlib"
+        }
+    ]
+}

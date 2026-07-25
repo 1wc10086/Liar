@@ -1,0 +1,45 @@
+{
+  "shell.general.system_info": "Liar ToolKit ~ カーネル:{} & シェル:{} & スクリプト:{} ~ {}",
+  "shell.general.init_success": "スクリプトの読み込みに成功しました",
+  "shell.general.init_time": "初期化にかかった時間: {} 秒",
+  "shell.general.init_fail": "読み込みに失敗しました",
+  "shell.general.input_prompt": "コマンド引数を順番に入力してください",
+  "shell.general.input_desc": "入力を空にすると終了します",
+  
+  "shell.general.path": "パス",
+  "shell.general.empty_path": "パスが指定されていません",
+  "shell.general.parse_done_title": "全てのコマンドの解析が完了しました",
+  "shell.general.parse_done_desc": "合計 {} 件",
+  
+  "shell.general.executing_title": "コマンド実行中: {}/{}",
+  "shell.general.select_func_prompt": "適用する機能を選択してください",
+  "shell.general.select_func_desc": "空入力でこのコマンドをスキップします",
+  "shell.general.enumeration": "列挙",
+  "shell.general.func_skipped": "コマンドをスキップしました",
+  "shell.general.func_skipped_desc": "機能が選択されませんでした",
+  
+  "shell.general.arg_obtained": "引数を取得しました: {}",
+  "shell.general.arg_generated": "引数を生成しました: {}",
+  "shell.general.arg_need_input": "引数の入力が必要です: {}",
+  "shell.general.invalid_input": "無効な入力です。再入力してください",
+  "shell.general.cannot_be_empty": "空にすることはできません",
+  
+  "shell.general.batch_complete": "バッチ処理が完了しました。合計 {} 件",
+  "shell.general.batch_detail": "成功 {} 件 | 失敗 {} 件",
+  "shell.general.command_exec_success": "コマンドを正常に実行しました",
+  "shell.general.command_exec_time": "実行時間: {} 秒",
+  "shell.general.command_exec_fail": "コマンドの実行に失敗しました",
+  "shell.general.all_done_title": "全てのコマンドが完了しました",
+  "shell.general.all_done_time": "合計時間: {} 秒",
+  
+  "shell.general.succeeded": "成功",
+  "shell.general.pause": "一時停止",
+  "shell.general.exec_exception": "実行例外",
+  "shell.general.parse_exception": "解析例外",
+  "shell.general.init_wait": "指示の初期化を待っています...",
+  "shell.general.processing": "処理中...",
+  
+  "shell.error.execution_failed": "処理に失敗しました",
+  "shell.error.file_not_exist": "指定されたパスが存在しません",
+  "shell.error.function_not_found": "対応する関数設定が見つかりません"
+}

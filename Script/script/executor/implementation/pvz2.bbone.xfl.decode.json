@@ -1,0 +1,21 @@
+{
+    "parameters": [
+        {
+            "name": "InputFolder",
+            "type": "path",
+            "folder": true,
+            "extensions": [
+                ".xfl"
+            ],
+            "language": "raw_directory"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".json"
+            ],
+            "language": "ripe_file"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".bin"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Is64Bit",
+            "type": "boolean",
+            "default": "false",
+            "language": "version_variant_64"
+        },
+        {
+            "name": "Level",
+            "type": "string",
+            "required": false,
+            "default": "9",
+            "language": "compress_level"
+        }
+    ]
+}

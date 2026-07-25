@@ -1,0 +1,20 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".json"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".pam"
+            ],
+            "language": "ripe_file"
+        }
+    ]
+}

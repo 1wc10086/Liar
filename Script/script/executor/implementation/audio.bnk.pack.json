@@ -1,0 +1,18 @@
+{
+    "parameters": [
+        {
+            "name": "InputFolder",
+            "type": "path",
+            "folder": true,
+            "language": "raw_directory"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".bnk"
+            ],
+            "language": "ripe_file"
+        }
+    ]
+}

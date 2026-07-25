@@ -1,0 +1,21 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".json"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFolder",
+            "type": "path",
+            "folder": true,
+            "extensions": [
+                ".xfl"
+            ],
+            "language": "bundle_directory"
+        }
+    ]
+}

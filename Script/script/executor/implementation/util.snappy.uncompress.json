@@ -1,0 +1,14 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "language": "ripe_file"
+        }
+    ]
+}

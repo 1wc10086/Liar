@@ -1,0 +1,45 @@
+{
+  "shell.general.system_info": "Liar ToolKit ~ Ядро:{} & Shell:{} & Скрипт:{} ~ {}",
+  "shell.general.init_success": "Скрипт успешно загружен",
+  "shell.general.init_time": "Время инициализации: {} с",
+  "shell.general.init_fail": "Не удалось загрузить",
+  "shell.general.input_prompt": "Пожалуйста, введите параметры команды по порядку",
+  "shell.general.input_desc": "Оставьте пустым, чтобы завершить ввод",
+  
+  "shell.general.path": "Путь",
+  "shell.general.empty_path": "Путь не указан",
+  "shell.general.parse_done_title": "Все команды разобраны",
+  "shell.general.parse_done_desc": "Всего {} команд",
+  
+  "shell.general.executing_title": "Выполнение команды {}/{}",
+  "shell.general.select_func_prompt": "Пожалуйста, выберите функцию для применения",
+  "shell.general.select_func_desc": "Оставьте пустым, чтобы пропустить команду",
+  "shell.general.enumeration": "Перечисление",
+  "shell.general.func_skipped": "Команда пропущена",
+  "shell.general.func_skipped_desc": "Функция не выбрана",
+  
+  "shell.general.arg_obtained": "Параметр получен: {}",
+  "shell.general.arg_generated": "Параметр сгенерирован: {}",
+  "shell.general.arg_need_input": "Необходимо ввести параметр: {}",
+  "shell.general.invalid_input": "Неверный ввод, попробуйте снова",
+  "shell.general.cannot_be_empty": "Не может быть пустым",
+  
+  "shell.general.batch_complete": "Пакетная обработка завершена, всего {} элементов",
+  "shell.general.batch_detail": "Успешно: {} | Неудачно: {}",
+  "shell.general.command_exec_success": "Команда выполнена успешно",
+  "shell.general.command_exec_time": "Время выполнения: {} с",
+  "shell.general.command_exec_fail": "Ошибка выполнения команды",
+  "shell.general.all_done_title": "Все команды выполнены",
+  "shell.general.all_done_time": "Общее время: {} с",
+  
+  "shell.general.succeeded": "УСПЕШНО",
+  "shell.general.pause": "Пауза",
+  "shell.general.exec_exception": "Исключение при выполнении",
+  "shell.general.parse_exception": "Исключение при разборе",
+  "shell.general.init_wait": "Ожидание инициализации инструкций...",
+  "shell.general.processing": "Обработка...",
+  
+  "shell.error.execution_failed": "Обработка не удалась",
+  "shell.error.file_not_exist": "Указанный путь не существует",
+  "shell.error.function_not_found": "Соответствующая функция не найдена"
+}

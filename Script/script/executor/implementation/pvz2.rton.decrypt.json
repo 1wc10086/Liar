@@ -1,0 +1,26 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".rton"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".bin"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Key",
+            "type": "string",
+            "default": "com_popcap_pvz2_magento_product_2013_05_05",
+            "language": "crypt_key"
+        }
+    ]
+}

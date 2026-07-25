@@ -1,0 +1,18 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".pak"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFolder",
+            "type": "path",
+            "folder": true,
+            "language": "bundle_directory"
+        }
+    ]
+}

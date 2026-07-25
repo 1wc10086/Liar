@@ -1,0 +1,13 @@
+{
+    "version": {
+        "kernel": "1.7",
+        "script": "1.7",
+        "shell": "gui:7.0"
+    },
+    "arch": "android",
+    "paths": {
+        "executor_implementation": "executor/implementation",
+        "settings": "configuration/setting.json",
+        "language_dir": "language"
+    }
+}

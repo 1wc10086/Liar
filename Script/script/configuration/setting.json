@@ -1,0 +1,9 @@
+{
+    "language": "chinese",
+    "ptx_bmp": false,
+    "astc_quality": "Fastest",
+    "png_compression_level": "10",
+    "ww2ogg_packed_codebooks": "support/wwise/media",
+    "js_buffer_size": "64.0m",
+    "library": "support/library"
+}

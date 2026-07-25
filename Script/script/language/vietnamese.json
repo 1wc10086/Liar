@@ -1,0 +1,45 @@
+{
+  "shell.general.system_info": "Liar ToolKit ~ Kernel:{} & Shell:{} & Script:{} ~ {}",
+  "shell.general.init_success": "Đã tải script thành công",
+  "shell.general.init_time": "Thời gian khởi tạo: {} giây",
+  "shell.general.init_fail": "Tải thất bại",
+  "shell.general.input_prompt": "Vui lòng nhập các tham số lệnh theo thứ tự",
+  "shell.general.input_desc": "Để trống để kết thúc nhập",
+  
+  "shell.general.path": "Đường dẫn",
+  "shell.general.empty_path": "Chưa chỉ định đường dẫn",
+  "shell.general.parse_done_title": "Đã phân tích tất cả lệnh",
+  "shell.general.parse_done_desc": "Tổng cộng {} lệnh",
+  
+  "shell.general.executing_title": "Đang thực thi lệnh {}/{}",
+  "shell.general.select_func_prompt": "Vui lòng chọn chức năng cần áp dụng",
+  "shell.general.select_func_desc": "Để trống để bỏ qua lệnh này",
+  "shell.general.enumeration": "Liệt kê",
+  "shell.general.func_skipped": "Lệnh đã bỏ qua",
+  "shell.general.func_skipped_desc": "Không chọn chức năng",
+  
+  "shell.general.arg_obtained": "Đã lấy tham số: {}",
+  "shell.general.arg_generated": "Đã tạo tham số: {}",
+  "shell.general.arg_need_input": "Cần nhập tham số: {}",
+  "shell.general.invalid_input": "Nhập không hợp lệ, vui lòng thử lại",
+  "shell.general.cannot_be_empty": "Không được để trống",
+  
+  "shell.general.batch_complete": "Xử lý hàng loạt hoàn tất, tổng {} mục",
+  "shell.general.batch_detail": "Thành công: {} | Thất bại: {}",
+  "shell.general.command_exec_success": "Thực thi lệnh thành công",
+  "shell.general.command_exec_time": "Thời gian thực thi: {} giây",
+  "shell.general.command_exec_fail": "Thực thi lệnh thất bại",
+  "shell.general.all_done_title": "Tất cả lệnh đã hoàn tất",
+  "shell.general.all_done_time": "Tổng thời gian: {} giây",
+  
+  "shell.general.succeeded": "THÀNH CÔNG",
+  "shell.general.pause": "Tạm dừng",
+  "shell.general.exec_exception": "Ngoại lệ khi thực thi",
+  "shell.general.parse_exception": "Ngoại lệ khi phân tích",
+  "shell.general.init_wait": "Đang chờ khởi tạo lệnh...",
+  "shell.general.processing": "Đang xử lý...",
+  
+  "shell.error.execution_failed": "Xử lý thất bại",
+  "shell.error.file_not_exist": "Đường dẫn chỉ định không tồn tại",
+  "shell.error.function_not_found": "Không tìm thấy cấu hình hàm tương ứng"
+}

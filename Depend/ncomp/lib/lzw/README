@@ -1,0 +1,119 @@
+DESCRIPTION
+-----------
+This archive contains a simple and readable ANSI C implementation of
+Lempel-Ziv-Welch coding and decoding.  This implementation is not intended to
+be the best, fastest, smallest, or any other performance related adjective.
+
+More information on lzw encoding may be found at:
+https://michaeldipperstein.github.io/lzw.html
+
+FILES
+-----
+COPYING         - Rules for copying and distributing GPL software
+COPYING.LESSER  - Rules for copying and distributing LGPL software
+lzw.c           - Demonstration of how to use the lzw library functions
+lzw.h           - Header containing prototypes for lzw library functions.
+lzwdecode.c     - Source for library lzw decoding routines.
+lzwencode.c     - Source for library lzw encoding routines.
+Makefile        - makefile for this project (assumes gcc compiler and GNU make)
+README          - this file
+optlist/        - Submodule containing optlist command line option parser
+                  library
+bitfile/        - Submodule containing bitfile bitwise file library
+
+BUILDING
+--------
+To build these files with GNU make and gcc, simply enter "make" from the
+command line.  The executable will be named sample (or sample.exe).
+
+USAGE
+-----
+Usage: lzw <options>
+
+options:
+  -c : Encode input file to output file.
+  -d : Decode input file to output file.
+  -i <filename> : Name of input file.
+  -o <filename> : Name of output file.
+  -h|?  : Print out command line options.
+
+-c      Compress the specified input file (see -i) using the Lempel-Ziv-Welch
+        encoding algorithm.  Results are written to the specified output file
+        (see -o).
+
+-d      Decompress the specified input file (see -i) using the Lempel-Ziv-Welch
+        decoding algorithm.  Results are written to the specified output file
+        (see -o).  Only files compressed by this program may be decompressed.
+
+-i <filename>   The name of the input file.  There is no valid usage of this
+                program without a specified input file.
+
+-o <filename>   The name of the output file.  If no file is specified, stdout
+                will be used.  NOTE: Sending compressed output to stdout may
+                produce undesirable results.
+LIBRARY API
+-----------
+Encoding Data:
+int LZWEncodeFile(FILE *fpIn, FILE *fpOut);
+fpIn
+    The file stream to be encoded.  It must opened.  NULL pointers will return
+    an error.
+fpOut
+    The file stream receiving the encoded results.  It must be opened.  NULL
+    pointers will return an error.
+Return Value
+    Zero for success, -1 for failure.  Error type is contained in errno.  Files
+    will remain open.
+
+Decoding Data:
+int LZWDecodeFile(FILE *fpIn, FILE *fpOut);
+fpIn
+    The file stream to be decoded.  It must be opened.  NULL pointers will
+    return an error.
+fpOut
+    The file stream receiving the decoded results.  It must be opened.  NULL
+    pointers will return an error.
+Return Value
+    Zero for success, -1 for failure.  Error type is contained in errno.  Files
+    will remain open.
+
+HISTORY
+-------
+02/20/05  - Initial Release
+03/27/05  - Utilizes variable code word length
+04/20/05  - Separated encoding and decoding routines
+          - Uses binary tree for encoding dictionary structure
+06/21/05  - Corrected BitFileGetBits/PutBits error that accessed an extra
+            byte when given an integral number of bytes.
+08/30/07  - Explicitly licensed under LGPL version 3.
+          - Replaces getopt() with optlist library.
+12/21/09  - Fixed bug that occurs when output code word grows by two or more
+            bits.
+            Used BitFilePutBitsInt/BitFileGetBitsInt to allow for code words
+            as large as sizeof(int).  (#define limits code words to 20 bits).
+04/12/15  - Changed return value to 0 for success and -1 for failure with
+            reason in errno.
+          - Removed unused macros and declarations.
+          - Upgraded to latest oplist and bitfile libraries.
+          - Tighter adherence to Michael Barr's "Top 10 Bug-Killing Coding
+            Standard Rules" (http://www.barrgroup.com/webinars/10rules).
+07/16/17  - Changes for cleaner use with GitHub
+05/10/26  - Rename sample lzw and properly close files
+
+TODO
+----
+- Do something to handle the case where the string table is full and does not
+  contain entries for strings that are being encoded.
+  - possibly purge and regenerate table after coding drops below X% hits
+  - possibly replace least recently used code word (LRU) with new code
+  - possibly start second dictionary when first is X% full and switch at
+    TBD event
+- Speed up code word search during compression
+  - try AVL or Red/Black trees
+  - maybe something similar to a Fibonacci heap
+- Use typedefs and more type size checking for better portability
+
+AUTHOR
+------
+Michael Dipperstein (mdipperstein@gmail.com)
+https://michaeldipperstein.github.io

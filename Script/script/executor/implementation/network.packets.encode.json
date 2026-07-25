@@ -1,0 +1,33 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".toml",
+                ".txt"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "language": "ripe_file"
+        },
+        {
+            "name": "ReqId",
+            "type": "string",
+            "language": "req_id_vector"
+        },
+        {
+            "name": "Version",
+            "type": "list",
+            "default": "0",
+            "list": [
+                "0",
+                "1"
+            ],
+            "language": "crypto_version"
+        }
+    ]
+}

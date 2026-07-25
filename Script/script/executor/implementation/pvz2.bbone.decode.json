@@ -1,0 +1,18 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".bbone"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFolder",
+            "type": "path",
+            "folder": true,
+            "language": "bundle_directory"
+        }
+    ]
+}

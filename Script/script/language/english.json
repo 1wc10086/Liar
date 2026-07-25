@@ -1,0 +1,45 @@
+{
+  "shell.general.system_info": "Liar ToolKit ~ Kernel:{} & Shell:{} & Script:{} ~ {}",
+  "shell.general.init_success": "Script loaded successfully",
+  "shell.general.init_time": "Initialization took {} s",
+  "shell.general.init_fail": "Failed to load",
+  "shell.general.input_prompt": "Please enter command arguments in order",
+  "shell.general.input_desc": "Leave blank to finish input",
+  
+  "shell.general.path": "Path",
+  "shell.general.empty_path": "No path specified",
+  "shell.general.parse_done_title": "All commands parsed",
+  "shell.general.parse_done_desc": "Total {} commands",
+  
+  "shell.general.executing_title": "Executing command {}/{}",
+  "shell.general.select_func_prompt": "Please select a function to apply",
+  "shell.general.select_func_desc": "Leave blank to skip this command",
+  "shell.general.enumeration": "Enumeration",
+  "shell.general.func_skipped": "Command skipped",
+  "shell.general.func_skipped_desc": "No function selected",
+  
+  "shell.general.arg_obtained": "Argument obtained: {}",
+  "shell.general.arg_generated": "Argument generated: {}",
+  "shell.general.arg_need_input": "Input required for argument: {}",
+  "shell.general.invalid_input": "Invalid input, please try again",
+  "shell.general.cannot_be_empty": "Cannot be empty",
+  
+  "shell.general.batch_complete": "Batch processing complete, total {} items",
+  "shell.general.batch_detail": "Successful: {} | Failed: {}",
+  "shell.general.command_exec_success": "Command executed successfully",
+  "shell.general.command_exec_time": "Execution time: {} s",
+  "shell.general.command_exec_fail": "Command execution failed",
+  "shell.general.all_done_title": "All commands completed",
+  "shell.general.all_done_time": "Total time: {} s",
+  
+  "shell.general.succeeded": "SUCCEEDED",
+  "shell.general.pause": "Paused",
+  "shell.general.exec_exception": "Execution exception",
+  "shell.general.parse_exception": "Parsing exception",
+  "shell.general.init_wait": "Waiting for instruction initialization...",
+  "shell.general.processing": "Processing...",
+  
+  "shell.error.execution_failed": "Processing failed",
+  "shell.error.file_not_exist": "Specified path does not exist",
+  "shell.error.function_not_found": "Function configuration not found"
+}

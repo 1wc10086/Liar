@@ -1,0 +1,77 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [".png"],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [".ptx"],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Format",
+            "type": "list",
+            "list": [
+                "ARGB8888",
+                "ABGR8888",
+                "RGBA4444",
+                "RGB565",
+                "RGBA5551",
+                "RGBA4444_Block",
+                "RGB565_Block",
+                "RGBA5551_Block",
+
+                "ARGB8888_A8",
+                "ABGR8888_A8",
+                "ARGB8888_A8_A1",
+                "ABGR8888_A8_A1",
+                "ARGB8888_A_Palette",
+                "ABGR8888_A_Palette",
+                "ARGB8888_A_Palette5",
+                "ABGR8888_A_Palette5",
+
+                "ARGB8888_BE",
+                "ARGB8888_Padding_BE",
+
+                "DXT1_RGB",
+                "DXT3_RGBA",
+                "DXT5_RGBA",
+                "DXT5_RGBA_MortonBlock",
+                "DXT5_RGBA_BE",
+
+                "ETC1_RGB",
+                "ETC1_RGB_A8",
+                "ETC1_RGB_A_Palette",
+
+                "PVRTC_4BPP_RGBA",
+                "PVRTC_4BPP_RGBA_A8",
+                "PVRTC_4BPP_RGBA_A8_A1",
+                "PVRTC_4BPP_RGBA_A_Palette",
+                "PVRTC_4BPP_RGBA_A_Palette5",
+                "PVRTC_2BPP_RGBA",
+
+                "ASTC_4x4",
+                "ASTC_5x5",
+                "ASTC_6x6",
+                "ASTC_8x8"
+            ],
+            "language": "format"
+        },
+        {
+            "name": "WriteHeader",
+            "type": "boolean",
+            "default": "true",
+            "language": "write_header"
+        },
+        {
+            "name": "Fmt0Mode",
+            "type": "list",
+            "list": ["ARGB", "ABGR", "ARGB_Padding"],
+            "language": "format_0_mode"
+        }
+    ]
+}

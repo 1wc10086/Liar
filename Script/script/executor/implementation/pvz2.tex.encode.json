@@ -1,0 +1,31 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".png"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".tex"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Format",
+            "type": "list",
+            "list": [
+                "ABGR8888",
+                "RGBA4444",
+                "RGBA5551",
+                "RGB565"
+            ],
+            "language": "format"
+        }
+    ]
+}

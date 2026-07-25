@@ -1,0 +1,33 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".txt",
+                ".json"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".json",
+                ".txt"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "DestinationVersion",
+            "type": "list",
+            "default": "json_list",
+            "list": [
+                "text",
+                "json_map",
+                "json_list"
+            ],
+            "language": "destination_version"
+        }
+    ]
+}

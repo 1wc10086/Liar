@@ -1,0 +1,45 @@
+{
+  "shell.general.system_info": "Liar ToolKit ~ 커널:{} & 쉘:{} & 스크립트:{} ~ {}",
+  "shell.general.init_success": "스크립트가 성공적으로 로드되었습니다",
+  "shell.general.init_time": "초기화 소요 시간: {} 초",
+  "shell.general.init_fail": "로드 실패",
+  "shell.general.input_prompt": "명령어 인수를 순서대로 입력하세요",
+  "shell.general.input_desc": "입력을 비우면 종료됩니다",
+  
+  "shell.general.path": "경로",
+  "shell.general.empty_path": "경로가 비어 있습니다",
+  "shell.general.parse_done_title": "모든 명령어 파싱 완료",
+  "shell.general.parse_done_desc": "총 {}개",
+  
+  "shell.general.executing_title": "명령어 실행 중: {}/{}",
+  "shell.general.select_func_prompt": "적용할 기능을 선택하세요",
+  "shell.general.select_func_desc": "비우면 이 명령어를 건너뜁니다",
+  "shell.general.enumeration": "열거",
+  "shell.general.func_skipped": "명령어 건너뜀",
+  "shell.general.func_skipped_desc": "선택된 기능이 없습니다",
+  
+  "shell.general.arg_obtained": "인수 획득: {}",
+  "shell.general.arg_generated": "인수 생성됨: {}",
+  "shell.general.arg_need_input": "인수 입력 필요: {}",
+  "shell.general.invalid_input": "잘못된 입력입니다. 다시 입력하세요",
+  "shell.general.cannot_be_empty": "비워둘 수 없습니다",
+  
+  "shell.general.batch_complete": "배치 처리 완료, 총 {}개",
+  "shell.general.batch_detail": "성공 {}개 | 실패 {}개",
+  "shell.general.command_exec_success": "명령어 실행 성공",
+  "shell.general.command_exec_time": "실행 시간: {} 초",
+  "shell.general.command_exec_fail": "명령어 실행 실패",
+  "shell.general.all_done_title": "모든 명령어 실행 완료",
+  "shell.general.all_done_time": "총 소요 시간: {} 초",
+  
+  "shell.general.succeeded": "성공",
+  "shell.general.pause": "일시정지",
+  "shell.general.exec_exception": "실행 예외",
+  "shell.general.parse_exception": "파싱 예외",
+  "shell.general.init_wait": "명령 초기화 대기 중...",
+  "shell.general.processing": "처리 중...",
+  
+  "shell.error.execution_failed": "처리 실패",
+  "shell.error.file_not_exist": "지정된 경로가 존재하지 않습니다",
+  "shell.error.function_not_found": "해당 함수 구성을 찾을 수 없습니다"
+}

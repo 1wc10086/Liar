@@ -1,0 +1,17 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".md5"
+            ],
+            "language": "ripe_file"
+        }
+    ]
+}

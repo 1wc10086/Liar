@@ -1,0 +1,40 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".rsb"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFolder",
+            "type": "path",
+            "folder": true,
+            "language": "bundle_directory"
+        },
+        {
+            "name": "ChangeImage",
+            "type": "boolean",
+            "default": "false",
+            "language": "change_image"
+        },
+        {
+            "name": "DeleteAfterConvert",
+            "type": "boolean",
+            "default": "false",
+            "language": "delete_after_convert"
+        },
+        {
+            "name": "Fmt0Mode",
+            "type": "list",
+            "list": [
+                "ARGB",
+                "ABGR",
+                "ARGB_Padding"
+            ],
+            "language": "format_0_mode"
+        }
+    ]
+}

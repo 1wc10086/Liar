@@ -1,0 +1,18 @@
+{
+    "parameters": [
+        {
+            "name": "InputFolder",
+            "type": "path",
+            "folder": true,
+            "language": "raw_directory"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".bbone"
+            ],
+            "language": "ripe_file"
+        }
+    ]
+}

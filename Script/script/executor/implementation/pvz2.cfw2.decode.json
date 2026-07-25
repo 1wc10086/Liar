@@ -1,0 +1,26 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".cfw2"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".json"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "PreserveHeader",
+            "type": "boolean",
+            "default": "false",
+            "language": "preserve_header"
+        }
+    ]
+}

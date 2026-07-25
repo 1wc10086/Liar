@@ -1,0 +1,47 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".png"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".tex"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "Format",
+            "type": "list",
+            "list": [
+                "L8",
+                "ARGB8888",
+                "ARGB4444",
+                "ARGB1555",
+                "RGB565",
+                "ABGR8888",
+                "RGBA4444",
+                "RGBA5551",
+                "XRGB8888",
+                "LA88",
+                "L8_RAW",
+                "ARGB8888_RAW",
+                "ARGB4444_RAW",
+                "ARGB1555_RAW",
+                "RGB565_RAW",
+                "ABGR8888_RAW",
+                "RGBA4444_RAW",
+                "RGBA5551_RAW",
+                "XRGB8888_RAW",
+                "LA88_RAW"
+            ],
+            "language": "format"
+        }
+    ]
+}

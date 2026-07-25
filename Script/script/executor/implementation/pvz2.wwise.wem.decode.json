@@ -1,0 +1,30 @@
+{
+    "parameters": [
+        {
+            "name": "WEMFile",
+            "type": "path",
+            "extensions": [
+                ".wem"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OGGFile",
+            "type": "path",
+            "extensions": [
+                ".ogg"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "PackedCodebooks",
+            "type": "list",
+            "language": "packed_codebooks",
+            "default": "packed_codebooks.bin",
+            "list": [
+                "packed_codebooks.bin",
+                "packed_codebooks_aoTuV_603.bin"
+            ]
+        }
+    ]
+}

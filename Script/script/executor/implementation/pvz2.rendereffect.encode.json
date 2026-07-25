@@ -1,0 +1,37 @@
+{
+    "parameters": [
+        {
+            "name": "InputFile",
+            "type": "path",
+            "extensions": [
+                ".popfx.json"
+            ],
+            "language": "raw_file"
+        },
+        {
+            "name": "OutputFile",
+            "type": "path",
+            "extensions": [
+                ".popfx"
+            ],
+            "language": "ripe_file"
+        },
+        {
+            "name": "VersionNumber",
+            "type": "integer",
+            "default": 1,
+            "language": "version_number"
+        },
+        {
+            "name": "VersionVariant",
+            "type": "list",
+            "default": "3",
+            "list": [
+                "1",
+                "2",
+                "3"
+            ],
+            "language": "version_variant"
+        }
+    ]
+}
