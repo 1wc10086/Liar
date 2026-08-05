@@ -38,6 +38,6 @@ Liar 是一个开源且功能最强大的工具箱，使用 C++ 编写，用于�
 | [**Twinning**](https://github.com/twinstar6980/Twinning) | twinstar6980 |
 
 
-## 问题与反馈
+## 问题
 
 [GitHub Issues](https://github.com/1WC10086/Liar/issues)。
