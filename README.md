@@ -21,30 +21,7 @@
 
 ## 介绍
 
-Liar 是一个开源且功能最强大的工具箱，使用 C++ 和 Flutter 编写，用于处理 PopCap 游戏中的资源文件。包括但不限于PVZ-1、PVZ-2。
-
-## 特性
-
-* [x] Resource-Stream-Bundle
-* [x] Resource-Stream-Group
-* [x] Resource-Stream-Bundle-Patch
-* [x] Marmalade DZip
-* [x] Package
-* [x] Arcv
-* [x] Xpr
-* [x] Texture
-* [x] Effect
-* [x] Animation
-* [x] Reflection-Object-Notation
-* [x] Wwise
-* [x] Atlas
-* [x] Character-Font-Widget-2
-* [x] Resource-Manifest
-* [x] EA XAS
-* [x] Core Audio Format
-* [x] FMOD Sample-Bank
-* [x] Extended Module
-        
+Liar 是一个开源且功能最强大的工具箱，使用 C++ 编写，用于处理 PopCap 游戏中的资源文件。包括但不限于PVZ-1、PVZ-2。
 
 ## 开源协议
 
