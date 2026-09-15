@@ -1,0 +1,67 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:m3c="using:Material3.Avalonia.Controls"
+             xmlns:vm="using:LiarUtil.Gui.ViewModels.Pages"
+             xmlns:views="using:LiarUtil.Gui.Views.Pages"
+             x:Class="LiarUtil.Gui.Views.MainView"
+             x:CompileBindings="False"
+             TopLevel.AutoSafeAreaPadding="False"
+             Background="{DynamicResource Md3SurfaceBrush}">
+
+  <UserControl.Styles>
+    <Style Selector="m3c|NavigationBarItem">
+      <Setter Property="Label" Value="{Binding Label}" />
+      <Setter Property="Icon" Value="{Binding Icon}" />
+    </Style>
+    <Style Selector="m3c|NavigationRailItem">
+      <Setter Property="Label" Value="{Binding Label}" />
+      <Setter Property="Icon" Value="{Binding Icon}" />
+    </Style>
+  </UserControl.Styles>
+
+  <Panel>
+    <Grid RowDefinitions="Auto,*,Auto">
+
+      <Border Name="TopBarHost"
+              Grid.Row="0"
+              Background="{DynamicResource Md3SurfaceBrush}">
+        <m3c:TopAppBar Background="Transparent"
+                       Title="{Binding Title}" />
+      </Border>
+
+      <Grid Grid.Row="1" ColumnDefinitions="Auto,*">
+        <Border Name="RailHost"
+                Grid.Column="0"
+                IsVisible="False"
+                Background="{DynamicResource Md3SurfaceBrush}">
+          <m3c:NavigationRail Background="Transparent"
+                              ItemsSource="{Binding Destinations}"
+                              SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" />
+        </Border>
+
+        <ContentControl Grid.Column="1" Content="{Binding CurrentPage}">
+          <ContentControl.DataTemplates>
+            <DataTemplate x:DataType="vm:HomeViewModel">
+              <views:HomeView />
+            </DataTemplate>
+            <DataTemplate x:DataType="vm:SettingsViewModel">
+              <views:SettingsView />
+            </DataTemplate>
+          </ContentControl.DataTemplates>
+        </ContentControl>
+      </Grid>
+
+      <Border Name="BottomBarHost"
+              Grid.Row="2"
+              Background="{DynamicResource Md3SurfaceContainerBrush}">
+        <m3c:NavigationBar Background="Transparent"
+                           ItemsSource="{Binding Destinations}"
+                           SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" />
+      </Border>
+
+    </Grid>
+
+    <m3c:SnackbarHost Name="SnackbarHost" />
+  </Panel>
+
+</UserControl>

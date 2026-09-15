@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="src/LiarUtil.Gui/LiarUtil.Gui.csproj" />
+  <Project Path="src/LiarUtil.Cli/LiarUtil.Cli.csproj" />
+  <Project Path="src/LiarUtil.Core/LiarUtil.Core.csproj" />
+  <Project Path="libs/AstcSharp/AstcSharp.csproj" />
+  <Project Path="libs/XMemCompressionDotNet/XMemCompressionDotNet.csproj" />
+  <Project Path="libs/Material3.Avalonia/Material3.Avalonia.csproj" />
+</Solution>

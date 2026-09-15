@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Stack0" xml:space="preserve">
+    <value>  Stack: {0}</value>
+  </data>
+  <data name="Message0" xml:space="preserve">
+    <value>  Message: {0}</value>
+  </data>
+  <data name="Type0" xml:space="preserve">
+    <value>  Type: {0}</value>
+  </data>
+  <data name="ARCVDataIncompleteExpected0BytesGot1" xml:space="preserve">
+    <value>ARCV data is incomplete: expected {0} bytes, got {1} bytes</value>
+  </data>
+  <data name="ARCVFileHeaderIncorrect" xml:space="preserve">
+    <value>ARCV file header is incorrect</value>
+  </data>
+  <data name="ARCVFileCountInvalid0" xml:space="preserve">
+    <value>ARCV file count is invalid: {0}</value>
+  </data>
+  <data name="ARCVEntryOutOfRangeOffset0Length" xml:space="preserve">
+    <value>ARCV entry is out of range: offset {0}, length {1}</value>
+  </data>
+  <data name="InvalidASFHeader" xml:space="preserve">
+    <value>Invalid ASF header</value>
+  </data>
+  <data name="CFU2JSONContentEmpty" xml:space="preserve">
+    <value>CFU2 JSON content is empty</value>
+  </data>
+  <data name="CFU2ListCountOutOfRange0" xml:space="preserve">
+    <value>CFU2 list count is out of range: {0}</value>
+  </data>
+  <data name="CFU2StringContainsCharactersThatCannotEncoded" xml:space="preserve">
+    <value>CFU2 string contains characters that cannot be encoded</value>
+  </data>
+  <data name="CFU2StringLengthOutOfRange0" xml:space="preserve">
+    <value>CFU2 string length is out of range: {0}</value>
+  </data>
+  <data name="CFU2CharacterStringLengthMust1" xml:space="preserve">
+    <value>CFU2 character string length must be 1</value>
+  </data>
+  <data name="CFU2CharacterMustSingleCharacterStringOrNumber" xml:space="preserve">
+    <value>CFU2 character must be a single-character string or a number between 0 and 65535</value>
+  </data>
+  <data name="CFU2CharacterIndexOutOfRange0" xml:space="preserve">
+    <value>CFU2 character index is out of range: {0}</value>
+  </data>
+  <data name="CFU2ValueOutOfInt16Range0" xml:space="preserve">
+    <value>CFU2 value is out of int16 range: {0}</value>
+  </data>
+  <data name="CFU2DataLengthInsufficient" xml:space="preserve">
+    <value>CFU2 data length is insufficient</value>
+  </data>
+  <data name="CFU2MarkerMismatch" xml:space="preserve">
+    <value>CFU2 marker mismatch</value>
+  </data>
+  <data name="CFW2JSONContentEmpty" xml:space="preserve">
+    <value>CFW2 JSON content is empty</value>
+  </data>
+  <data name="CFW2ListCountOutOfRange0" xml:space="preserve">
+    <value>CFW2 list count is out of range: {0}</value>
+  </data>
+  <data name="CFW2StringContainsCharactersThatCannotEncoded" xml:space="preserve">
+    <value>CFW2 string contains characters that cannot be encoded</value>
+  </data>
+  <data name="CFW2StringLengthOutOfRange0" xml:space="preserve">
+    <value>CFW2 string length is out of range: {0}</value>
+  </data>
+  <data name="CFW2CharacterStringLengthMust1" xml:space="preserve">
+    <value>CFW2 character string length must be 1</value>
+  </data>
+  <data name="CFW2CharacterMustSingleCharacterStringOrNumber" xml:space="preserve">
+    <value>CFW2 character must be a single-character string or a number between 0 and 65535</value>
+  </data>
+  <data name="CFW2DataLengthInsufficient" xml:space="preserve">
+    <value>CFW2 data length is insufficient</value>
+  </data>
+  <data name="DOMDocumentXmlContentEmpty" xml:space="preserve">
+    <value>DOMDocument.xml content is empty</value>
+  </data>
+  <data name="RootNodeOfDOMDocumentXmlMustDOMDocument" xml:space="preserve">
+    <value>The root node of DOMDocument.xml must be DOMDocument</value>
+  </data>
+  <data name="InvalidEALayer3MPEGParameters" xml:space="preserve">
+    <value>Invalid EALayer3 MPEG parameters</value>
+  </data>
+  <data name="EALayer3MPEGDecodingFailed" xml:space="preserve">
+    <value>EALayer3 MPEG decoding failed</value>
+  </data>
+  <data name="InvalidEALayer3FrameSize" xml:space="preserve">
+    <value>Invalid EALayer3 frame size</value>
+  </data>
+  <data name="InvalidEALayer3FrameLayout" xml:space="preserve">
+    <value>Invalid EALayer3 frame layout</value>
+  </data>
+  <data name="EALayer3FrameTruncated" xml:space="preserve">
+    <value>EALayer3 frame is truncated</value>
+  </data>
+  <data name="EALayer3GranulePairMismatch" xml:space="preserve">
+    <value>EALayer3 granule pair mismatch</value>
+  </data>
+  <data name="FMTChunkBitDepthError" xml:space="preserve">
+    <value>FMT chunk bit depth error</value>
+  </data>
+  <data name="FMTChunkBlockAlignmentError" xml:space="preserve">
+    <value>FMT chunk block alignment error</value>
+  </data>
+  <data name="FMTChunkExtensionLengthError" xml:space="preserve">
+    <value>FMT chunk extension length error</value>
+  </data>
+  <data name="FMTChunkUnknownBufferSignatureError" xml:space="preserve">
+    <value>FMT chunk unknown buffer signature error</value>
+  </data>
+  <data name="FMTChunkCodecIdentifierError" xml:space="preserve">
+    <value>FMT chunk codec identifier error</value>
+  </data>
+  <data name="FontWidgetDATJSONContentEmpty" xml:space="preserve">
+    <value>FontWidget DAT JSON content is empty</value>
+  </data>
+  <data name="G711DataDoesNotContainCompleteFrame" xml:space="preserve">
+    <value>G.711 data does not contain a complete frame</value>
+  </data>
+  <data name="InvalidIMAADPCMBlockAlignment" xml:space="preserve">
+    <value>Invalid IMA ADPCM block alignment</value>
+  </data>
+  <data name="ImageStringContentInvalid" xml:space="preserve">
+    <value>ImageString content is invalid</value>
+  </data>
+  <data name="ImageStringRootNodeInvalid" xml:space="preserve">
+    <value>ImageString root node is invalid</value>
+  </data>
+  <data name="JSONContentInvalid0" xml:space="preserve">
+    <value>JSON content is invalid: {0}</value>
+  </data>
+  <data name="JSONRootNodeMustObject" xml:space="preserve">
+    <value>JSON root node must be an object</value>
+  </data>
+  <data name="JSONRootNodeInvalid" xml:space="preserve">
+    <value>JSON root node is invalid</value>
+  </data>
+  <data name="JSONLacksGroupsArray" xml:space="preserve">
+    <value>JSON lacks the groups array</value>
+  </data>
+  <data name="LPCMDataDoesNotContainCompleteFrame" xml:space="preserve">
+    <value>LPCM data does not contain a complete frame</value>
+  </data>
+  <data name="InvalidLPCMSampleLayout" xml:space="preserve">
+    <value>Invalid LPCM sample layout</value>
+  </data>
+  <data name="LZMADataLengthInsufficient" xml:space="preserve">
+    <value>LZMA data length is insufficient</value>
+  </data>
+  <data name="InvalidLZMARecordLength" xml:space="preserve">
+    <value>Invalid LZMA record length</value>
+  </data>
+  <data name="InvalidMP3BitReadLength" xml:space="preserve">
+    <value>Invalid MP3 bit read length</value>
+  </data>
+  <data name="MP3FrameDataInsufficient" xml:space="preserve">
+    <value>MP3 frame data is insufficient</value>
+  </data>
+  <data name="InvalidMSADPCMBlockAlignment" xml:space="preserve">
+    <value>Invalid MS ADPCM block alignment</value>
+  </data>
+  <data name="MSADPCMPredictorCoefficientIndexOutOfRange" xml:space="preserve">
+    <value>MS ADPCM predictor coefficient index is out of range: {0}</value>
+  </data>
+  <data name="InsufficientOGGPacketSpace" xml:space="preserve">
+    <value>Insufficient OGG packet space</value>
+  </data>
+  <data name="InvalidOGGAudioParameters" xml:space="preserve">
+    <value>Invalid OGG audio parameters</value>
+  </data>
+  <data name="PAKFileEmptyOrTruncated" xml:space="preserve">
+    <value>PAK file is empty or truncated</value>
+  </data>
+  <data name="PAKFileNameTooLong0" xml:space="preserve">
+    <value>PAK file name is too long: {0}</value>
+  </data>
+  <data name="PAKFileTableTruncated" xml:space="preserve">
+    <value>PAK file table is truncated</value>
+  </data>
+  <data name="PAKFileTableEntry0Illegal1" xml:space="preserve">
+    <value>PAK file table entry {0} is illegal: {1}</value>
+  </data>
+  <data name="PAMJSONContentEmpty" xml:space="preserve">
+    <value>PAM JSON content is empty</value>
+  </data>
+  <data name="PAMMainSpriteMissing" xml:space="preserve">
+    <value>PAM main sprite is missing</value>
+  </data>
+  <data name="PAMImageTransformTypeDoesNotMatchVersion" xml:space="preserve">
+    <value>PAM image transform type does not match the version</value>
+  </data>
+  <data name="PAMSpriteFrame0ModifiesLayerThatDoes" xml:space="preserve">
+    <value>PAM sprite frame {0} modifies a layer that does not exist: {1}</value>
+  </data>
+  <data name="PAMSpriteFrame0ReferencesOutOfRange" xml:space="preserve">
+    <value>PAM sprite frame {0} references an out-of-range sprite resource {1}</value>
+  </data>
+  <data name="PAMMagicNumberIncorrect" xml:space="preserve">
+    <value>PAM magic number is incorrect</value>
+  </data>
+  <data name="PAXJSONContentEmpty" xml:space="preserve">
+    <value>PAX JSON content is empty</value>
+  </data>
+  <data name="PAX0ExceedsEncodableLength" xml:space="preserve">
+    <value>PAX {0} exceeds the encodable length</value>
+  </data>
+  <data name="PAX0LengthInvalid" xml:space="preserve">
+    <value>PAX {0} length is invalid</value>
+  </data>
+  <data name="PAX0StaticFrameCountInconsistentWithFrame" xml:space="preserve">
+    <value>PAX {0} static frame count is inconsistent with the frame list</value>
+  </data>
+  <data name="PAXTransformKeyframeMissingValues" xml:space="preserve">
+    <value>PAX transform keyframe is missing values</value>
+  </data>
+  <data name="PAXTransformHasNoKeyframes" xml:space="preserve">
+    <value>PAX transform has no keyframes</value>
+  </data>
+  <data name="PAXStringNotValidUTF8Sequence" xml:space="preserve">
+    <value>PAX string is not a valid UTF-8 sequence</value>
+  </data>
+  <data name="PAXFileHasExtraDataAtEnd" xml:space="preserve">
+    <value>PAX file has extra data at the end</value>
+  </data>
+  <data name="InvalidPCMWAVLayout" xml:space="preserve">
+    <value>Invalid PCM WAV layout</value>
+  </data>
+  <data name="PNGEncodingFailed" xml:space="preserve">
+    <value>PNG encoding failed</value>
+  </data>
+  <data name="POPFXJSONContentEmpty" xml:space="preserve">
+    <value>POPFX JSON content is empty</value>
+  </data>
+  <data name="POPFX0OutOfRange" xml:space="preserve">
+    <value>POPFX {0} is out of range</value>
+  </data>
+  <data name="POPFXCodeMustStringOrStringArray" xml:space="preserve">
+    <value>POPFX code must be a string or a string array</value>
+  </data>
+  <data name="POPFXCodeLineMustString" xml:space="preserve">
+    <value>POPFX code line must be a string</value>
+  </data>
+  <data name="POPFXValueTypeMustStringOrNumber" xml:space="preserve">
+    <value>POPFX value type must be a string or a number</value>
+  </data>
+  <data name="POPFXValueTypeInvalid0" xml:space="preserve">
+    <value>POPFX value type is invalid: {0}</value>
+  </data>
+  <data name="POPFXValueIndexOutOfRange0" xml:space="preserve">
+    <value>POPFX value index is out of range: {0}</value>
+  </data>
+  <data name="POPFXOffsetOutOfRange0" xml:space="preserve">
+    <value>POPFX offset is out of range: {0}</value>
+  </data>
+  <data name="POPFXWriteOutOfRange" xml:space="preserve">
+    <value>POPFX write is out of range</value>
+  </data>
+  <data name="POPFXStringDataOffsetOutOfRange0" xml:space="preserve">
+    <value>POPFX string data offset is out of range: {0}</value>
+  </data>
+  <data name="POPFXStringIndexOutOfRange0" xml:space="preserve">
+    <value>POPFX string index is out of range: {0}</value>
+  </data>
+  <data name="POPFXStringOutOfRangeOffset0Length" xml:space="preserve">
+    <value>POPFX string is out of range: offset {0}, length {1}</value>
+  </data>
+  <data name="POPFXDataInsufficient" xml:space="preserve">
+    <value>POPFX data is insufficient</value>
+  </data>
+  <data name="POPFXDataLengthInsufficient" xml:space="preserve">
+    <value>POPFX data length is insufficient</value>
+  </data>
+  <data name="POPFXSection0OutOfRange" xml:space="preserve">
+    <value>POPFX section {0} is out of range</value>
+  </data>
+  <data name="POPFXVersionVariantDoesNotMatchFileSection" xml:space="preserve">
+    <value>POPFX version variant does not match the file: section {0} size {1}, expected {2}</value>
+  </data>
+  <data name="POPFXVersionVariantMustStringOrNumber" xml:space="preserve">
+    <value>POPFX version variant must be a string or a number</value>
+  </data>
+  <data name="POPFXVersionVariantInvalid0" xml:space="preserve">
+    <value>POPFX version variant is invalid: {0}</value>
+  </data>
+  <data name="POPFXShaderIndexOutOfRange0" xml:space="preserve">
+    <value>POPFX shader index is out of range: {0}</value>
+  </data>
+  <data name="POPFXSettingTypeInvalid0" xml:space="preserve">
+    <value>POPFX setting type is invalid: {0}</value>
+  </data>
+  <data name="POPFXMagicNumberIncorrect" xml:space="preserve">
+    <value>POPFX magic number is incorrect</value>
+  </data>
+  <data name="PPFJSONContentEmpty" xml:space="preserve">
+    <value>PPF JSON content is empty</value>
+  </data>
+  <data name="PPF0CountMust12" xml:space="preserve">
+    <value>PPF {0} count must be {1}, but was {2}</value>
+  </data>
+  <data name="PPF0IndexOutOfRange1" xml:space="preserve">
+    <value>PPF {0} index is out of range: {1}</value>
+  </data>
+  <data name="PPF0LengthMust12" xml:space="preserve">
+    <value>PPF {0} length must be {1}, but was {2}</value>
+  </data>
+  <data name="PPFValuePointCountInvalid0" xml:space="preserve">
+    <value>PPF value point count is invalid: {0}</value>
+  </data>
+  <data name="PPFListCountInvalid0" xml:space="preserve">
+    <value>PPF list count is invalid: {0}</value>
+  </data>
+  <data name="PPFHexadecimalCharacterInvalid0" xml:space="preserve">
+    <value>PPF hexadecimal character is invalid: {0}</value>
+  </data>
+  <data name="PPFHexadecimalDataMustString" xml:space="preserve">
+    <value>PPF hexadecimal data must be a string</value>
+  </data>
+  <data name="PPFHexadecimalDataLengthInvalid" xml:space="preserve">
+    <value>PPF hexadecimal data length is invalid</value>
+  </data>
+  <data name="PPFEmitterIndexInvalid0" xml:space="preserve">
+    <value>PPF emitter index is invalid: {0}</value>
+  </data>
+  <data name="PPFStartupStateCountInvalid0" xml:space="preserve">
+    <value>PPF startup state count is invalid: {0}</value>
+  </data>
+  <data name="PPFStartupStateLengthsAreInconsistent" xml:space="preserve">
+    <value>PPF startup state lengths are inconsistent</value>
+  </data>
+  <data name="PPFStringTooLong0Bytes" xml:space="preserve">
+    <value>PPF string is too long: {0} bytes</value>
+  </data>
+  <data name="PPFDataBlockLengthInvalid0" xml:space="preserve">
+    <value>PPF data block length is invalid: {0}</value>
+  </data>
+  <data name="PPFParticleDefinitionIndexInvalid0" xml:space="preserve">
+    <value>PPF particle definition index is invalid: {0}</value>
+  </data>
+  <data name="PPFParticleVariationCountInsufficient0" xml:space="preserve">
+    <value>PPF particle variation count is insufficient: {0}</value>
+  </data>
+  <data name="PPFFreeEmitterIndexInvalid0" xml:space="preserve">
+    <value>PPF free emitter index is invalid: {0}</value>
+  </data>
+  <data name="PPFMagicNumberIncorrect" xml:space="preserve">
+    <value>PPF magic number is incorrect</value>
+  </data>
+  <data name="RSBPacketOutOfRange012" xml:space="preserve">
+    <value>RSB packet is out of range: {0}+{1}/{2}</value>
+  </data>
+  <data name="RSBIdentifierLengthExceeds0Bytes1" xml:space="preserve">
+    <value>RSB identifier length exceeds {0} bytes: {1}</value>
+  </data>
+  <data name="RSGPRawPacketSectionOutOfRange" xml:space="preserve">
+    <value>RSGP raw packet section is out of range</value>
+  </data>
+  <data name="RSGPPacketInfoRegionOutOfRange" xml:space="preserve">
+    <value>RSGP packet info region is out of range</value>
+  </data>
+  <data name="RSGPPacketSectionOutOfRange" xml:space="preserve">
+    <value>RSGP packet section is out of range</value>
+  </data>
+  <data name="RSGPPacketHeaderIncomplete" xml:space="preserve">
+    <value>RSGP packet header is incomplete</value>
+  </data>
+  <data name="RTONEncryptionFailed" xml:space="preserve">
+    <value>RTON encryption failed</value>
+  </data>
+  <data name="RTONEncodingFailed" xml:space="preserve">
+    <value>RTON encoding failed</value>
+  </data>
+  <data name="RTONDecryptionFailed" xml:space="preserve">
+    <value>RTON decryption failed</value>
+  </data>
+  <data name="RTONDecodingFailed" xml:space="preserve">
+    <value>RTON decoding failed</value>
+  </data>
+  <data name="ReanimJSONContentEmpty" xml:space="preserve">
+    <value>Reanim JSON content is empty</value>
+  </data>
+  <data name="ReanimTransformIncomplete" xml:space="preserve">
+    <value>Reanim transform is incomplete</value>
+  </data>
+  <data name="ReanimTransformComponentIncomplete" xml:space="preserve">
+    <value>Reanim transform component is incomplete</value>
+  </data>
+  <data name="ReanimTransformComponentAttributeInvalid" xml:space="preserve">
+    <value>Reanim transform component attribute is invalid</value>
+  </data>
+  <data name="ReanimTransformComponentMustObject" xml:space="preserve">
+    <value>Reanim transform component must be an object</value>
+  </data>
+  <data name="ReanimTransformAttributeInvalid" xml:space="preserve">
+    <value>Reanim transform attribute is invalid</value>
+  </data>
+  <data name="ReanimTransformMustObject" xml:space="preserve">
+    <value>Reanim transform must be an object</value>
+  </data>
+  <data name="ReanimDataLengthMismatch" xml:space="preserve">
+    <value>Reanim data length mismatch</value>
+  </data>
+  <data name="RsbPatchOnlySupportsRSBVersion0CurrentFile" xml:space="preserve">
+    <value>RsbPatch only supports RSB version {0}; the current file is version {1}</value>
+  </data>
+  <data name="RsbPatchNameExceeds0Bytes1" xml:space="preserve">
+    <value>RsbPatch name exceeds {0} bytes: {1}</value>
+  </data>
+  <data name="RsbPatchDataIncompleteExpected0Bytes1Remaining" xml:space="preserve">
+    <value>RsbPatch data is incomplete: expected {0} bytes, {1} remaining</value>
+  </data>
+  <data name="SMPLChunkLoopCountInvalid" xml:space="preserve">
+    <value>SMPL chunk loop count is invalid</value>
+  </data>
+  <data name="SNRDataChunkInvalid" xml:space="preserve">
+    <value>SNR data chunk is invalid</value>
+  </data>
+  <data name="SNRFileHeaderTruncated" xml:space="preserve">
+    <value>SNR file header is truncated</value>
+  </data>
+  <data name="SNREncodingMismatch" xml:space="preserve">
+    <value>SNR encoding mismatch</value>
+  </data>
+  <data name="SNRInputHasNoSampleData" xml:space="preserve">
+    <value>SNR input has no sample data</value>
+  </data>
+  <data name="SNRInputOutOfFormatRange" xml:space="preserve">
+    <value>SNR input is out of the format range</value>
+  </data>
+  <data name="SNRChannelCountInvalid" xml:space="preserve">
+    <value>SNR channel count is invalid</value>
+  </data>
+  <data name="SPSChunkIdentifierMismatch" xml:space="preserve">
+    <value>SPS chunk identifier mismatch</value>
+  </data>
+  <data name="SPSDataChunkInvalid" xml:space="preserve">
+    <value>SPS data chunk is invalid</value>
+  </data>
+  <data name="SPSDataChunkTruncated" xml:space="preserve">
+    <value>SPS data chunk is truncated</value>
+  </data>
+  <data name="SPSFileHeaderTruncated" xml:space="preserve">
+    <value>SPS file header is truncated</value>
+  </data>
+  <data name="SPSInputHasNoSampleData" xml:space="preserve">
+    <value>SPS input has no sample data</value>
+  </data>
+  <data name="SPSInputOutOfFormatRange" xml:space="preserve">
+    <value>SPS input is out of the format range</value>
+  </data>
+  <data name="SPSChannelCountInvalid" xml:space="preserve">
+    <value>SPS channel count is invalid</value>
+  </data>
+  <data name="TrailJSONContentEmpty" xml:space="preserve">
+    <value>Trail JSON content is empty</value>
+  </data>
+  <data name="TrailDataLengthMismatch" xml:space="preserve">
+    <value>Trail data length mismatch</value>
+  </data>
+  <data name="VCDiffVariableLengthIntegerCannotNegative" xml:space="preserve">
+    <value>VCDiff variable-length integer cannot be negative</value>
+  </data>
+  <data name="VCDiffCodeTableLacksUsableOpcodes" xml:space="preserve">
+    <value>VCDiff code table lacks usable opcodes</value>
+  </data>
+  <data name="VCDiffWindowLengthDoesNotMatchActualOutput" xml:space="preserve">
+    <value>VCDiff window length does not match the actual output</value>
+  </data>
+  <data name="VCDiffDecodingFailed0" xml:space="preserve">
+    <value>VCDiff decoding failed: {0}</value>
+  </data>
+  <data name="VORBChunkSizeInvalid" xml:space="preserve">
+    <value>VORB chunk size is invalid</value>
+  </data>
+  <data name="VarIntValueTooLarge" xml:space="preserve">
+    <value>VarInt value is too large</value>
+  </data>
+  <data name="WAVChunkTruncated" xml:space="preserve">
+    <value>WAV chunk is truncated</value>
+  </data>
+  <data name="WAVFileLacksFmtOrDataChunk" xml:space="preserve">
+    <value>WAV file lacks a fmt or data chunk</value>
+  </data>
+  <data name="WPParticleFileInfoInvalid" xml:space="preserve">
+    <value>WP particle file info is invalid</value>
+  </data>
+  <data name="WPParticleFileHeaderInvalid" xml:space="preserve">
+    <value>WP particle file header is invalid</value>
+  </data>
+  <data name="XASDataTruncated" xml:space="preserve">
+    <value>XAS data is truncated</value>
+  </data>
+  <data name="XASDataLengthDoesNotMatchEAACSample" xml:space="preserve">
+    <value>XAS data length does not match the EAAC sample count</value>
+  </data>
+  <data name="XFLExtraJsonContentEmpty" xml:space="preserve">
+    <value>XFL extra.json content is empty</value>
+  </data>
+  <data name="XFLResolutionMustGreaterThan00" xml:space="preserve">
+    <value>XFL resolution must be greater than 0, but was {0}</value>
+  </data>
+  <data name="XFLFileContentEmpty0" xml:space="preserve">
+    <value>XFL file content is empty: {0}</value>
+  </data>
+  <data name="XFLDocumentLacksTimeline" xml:space="preserve">
+    <value>XFL document lacks a timeline</value>
+  </data>
+  <data name="XMDataEmpty" xml:space="preserve">
+    <value>XM data is empty</value>
+  </data>
+  <data name="XMModuleStructureInconsistent" xml:space="preserve">
+    <value>XM module structure is inconsistent</value>
+  </data>
+  <data name="XMAChunkTruncated" xml:space="preserve">
+    <value>XMA chunk is truncated</value>
+  </data>
+  <data name="XMAFileLacksFmtOrDataChunk" xml:space="preserve">
+    <value>XMA file lacks a fmt or data chunk</value>
+  </data>
+  <data name="XMA2EncodingFailed" xml:space="preserve">
+    <value>XMA2 encoding failed</value>
+  </data>
+  <data name="XMA2DecodingFailed" xml:space="preserve">
+    <value>XMA2 decoding failed</value>
+  </data>
+  <data name="XMLContentInvalid" xml:space="preserve">
+    <value>XML content is invalid</value>
+  </data>
+  <data name="XMemCompressionOnlySupportsHostPAKVersion" xml:space="preserve">
+    <value>XMem compression only supports the host PAK version</value>
+  </data>
+  <data name="XNBPrimaryObjectNotFont0" xml:space="preserve">
+    <value>XNB primary object is not a font: {0}</value>
+  </data>
+  <data name="XNBPrimaryObjectNotSoundEffect0" xml:space="preserve">
+    <value>XNB primary object is not a sound effect: {0}</value>
+  </data>
+  <data name="XNBPrimaryObjectTypeIndexInvalid0" xml:space="preserve">
+    <value>XNB primary object type index is invalid: {0}</value>
+  </data>
+  <data name="XNBFontJSONContentEmpty" xml:space="preserve">
+    <value>XNB font JSON content is empty</value>
+  </data>
+  <data name="XNBFontListLengthInvalid0" xml:space="preserve">
+    <value>XNB font list length is invalid: {0}</value>
+  </data>
+  <data name="XNBFontTextureObjectTypeMismatch" xml:space="preserve">
+    <value>XNB font texture object type mismatch</value>
+  </data>
+  <data name="XNBFontTextureLayoutInvalid0X1" xml:space="preserve">
+    <value>XNB font texture layout is invalid: {0}x{1}, {2} mip levels</value>
+  </data>
+  <data name="XNBFontTextureDataLengthInvalid0" xml:space="preserve">
+    <value>XNB font texture data length is invalid: {0}</value>
+  </data>
+  <data name="XNBTypeReaderCountInvalid0" xml:space="preserve">
+    <value>XNB type reader count is invalid: {0}</value>
+  </data>
+  <data name="XPRNameOffsetOutOfRange0" xml:space="preserve">
+    <value>XPR name offset is out of range: {0}</value>
+  </data>
+  <data name="XPRNameNotZeroTerminated" xml:space="preserve">
+    <value>XPR name is not zero-terminated</value>
+  </data>
+  <data name="XPRNamePoolOffsetOutOfRange" xml:space="preserve">
+    <value>XPR name pool offset is out of range</value>
+  </data>
+  <data name="XPRDataRegionLengthInvalid" xml:space="preserve">
+    <value>XPR data region length is invalid</value>
+  </data>
+  <data name="XPRFileMarkerMismatchExpectedXPR2Got0x" xml:space="preserve">
+    <value>XPR file marker mismatch: expected XPR2, got 0x{0:X8}</value>
+  </data>
+  <data name="XPRFileLengthInsufficient" xml:space="preserve">
+    <value>XPR file length is insufficient</value>
+  </data>
+  <data name="XPREntry0BeyondDataRegion" xml:space="preserve">
+    <value>XPR entry {0} is beyond the data region</value>
+  </data>
+  <data name="XPRIndexCountInvalid" xml:space="preserve">
+    <value>XPR index count is invalid</value>
+  </data>
+  <data name="DOMDocumentXmlMissingFromZIPXFLArchive" xml:space="preserve">
+    <value>DOMDocument.xml is missing from the ZIP-XFL archive</value>
+  </data>
+  <data name="ZlibDecompressedDataLengthDoesNotMatchExpectation" xml:space="preserve">
+    <value>Zlib decompressed data length does not match the expectation</value>
+  </data>
+  <data name="AnimationTimelineMustContainFlowCommandAndSprite" xml:space="preserve">
+    <value>The animation timeline must contain the flow, command and sprite layers</value>
+  </data>
+  <data name="AtlasimagemapDatFixedMarkerInvalid" xml:space="preserve">
+    <value>atlasimagemap.dat fixed marker is invalid</value>
+  </data>
+  <data name="AtlasimagemapDatEntryCountInvalid" xml:space="preserve">
+    <value>atlasimagemap.dat entry count is invalid</value>
+  </data>
+  <data name="AtlasimagemapDatRequiresAtlasName" xml:space="preserve">
+    <value>atlasimagemap.dat requires an atlas name</value>
+  </data>
+  <data name="CommandLayer" xml:space="preserve">
+    <value>command layer</value>
+  </data>
+  <data name="CommandLayerFrame0" xml:space="preserve">
+    <value>command layer frame {0}</value>
+  </data>
+  <data name="CommandLayerFrame0ContainsUnparsableCommand1" xml:space="preserve">
+    <value>Command layer frame {0} contains an unparsable command: {1}</value>
+  </data>
+  <data name="DataChunkInvalid" xml:space="preserve">
+    <value>data chunk is invalid</value>
+  </data>
+  <data name="XprDataOffsetInDefinitionJsonInvalid" xml:space="preserve">
+    <value>XprDataOffset in definition.json is invalid</value>
+  </data>
+  <data name="DescChunkLengthInvalid" xml:space="preserve">
+    <value>desc chunk length is invalid</value>
+  </data>
+  <data name="FlowLayer" xml:space="preserve">
+    <value>flow layer</value>
+  </data>
+  <data name="FlowLayerFrame0" xml:space="preserve">
+    <value>flow layer frame {0}</value>
+  </data>
+  <data name="LabelTypeOfFlowLayerFrame0MustName" xml:space="preserve">
+    <value>The labelType of flow layer frame {0} must be name</value>
+  </data>
+  <data name="ScriptOfFlowLayerFrame0MustStop" xml:space="preserve">
+    <value>The script of flow layer frame {0} must be stop();</value>
+  </data>
+  <data name="FlowCommandLayer" xml:space="preserve">
+    <value>flow/command layer</value>
+  </data>
+  <data name="Ima4PacketTruncated" xml:space="preserve">
+    <value>ima4 packet is truncated</value>
+  </data>
+  <data name="PaktPacketSizeDoesNotMatchDataLength" xml:space="preserve">
+    <value>pakt packet size does not match the data length</value>
+  </data>
+  <data name="PaktPacketSizeInvalid" xml:space="preserve">
+    <value>pakt packet size is invalid</value>
+  </data>
+  <data name="PlistTextureRectInvalid0" xml:space="preserve">
+    <value>plist textureRect is invalid: {0}</value>
+  </data>
+  <data name="PlistEntryLacksTextureRect0" xml:space="preserve">
+    <value>plist entry lacks textureRect: {0}</value>
+  </data>
+  <data name="PlistStructureInvalid" xml:space="preserve">
+    <value>plist structure is invalid</value>
+  </data>
+  <data name="ReservedHeader32MustContain8Values" xml:space="preserve">
+    <value>reserved_header_32 must contain 8 values</value>
+  </data>
+  <data name="ResourcePathCannotEmpty" xml:space="preserve">
+    <value>resource.path cannot be empty</value>
+  </data>
+  <data name="N0NotValidInteger" xml:space="preserve">
+    <value>{0} is not a valid integer</value>
+  </data>
+  <data name="N0ContentEmpty" xml:space="preserve">
+    <value>{0} content is empty</value>
+  </data>
+  <data name="N0ContentInvalid" xml:space="preserve">
+    <value>{0} content is invalid</value>
+  </data>
+  <data name="N0InvalidAtOffset12" xml:space="preserve">
+    <value>{0} is invalid at offset {1}: {2}</value>
+  </data>
+  <data name="N0TruncatedAtOffset1Need2Bytes" xml:space="preserve">
+    <value>{0} is truncated at offset {1}: need {2} bytes, {3} bytes remain</value>
+  </data>
+  <data name="N0ChangedItsInstanceTypeAtFrame1" xml:space="preserve">
+    <value>{0} changed its instance type at frame {1}</value>
+  </data>
+  <data name="N0StringContainsCharactersThatCannotEncoded" xml:space="preserve">
+    <value>{0} string contains characters that cannot be encoded</value>
+  </data>
+  <data name="N0Must32BitSignedInteger" xml:space="preserve">
+    <value>{0} must be a 32-bit signed integer</value>
+  </data>
+  <data name="N0MustPrintableASCIIText" xml:space="preserve">
+    <value>{0} must be printable ASCII text</value>
+  </data>
+  <data name="N0MustString" xml:space="preserve">
+    <value>{0} must be a string</value>
+  </data>
+  <data name="N0MustObject" xml:space="preserve">
+    <value>{0} must be an object</value>
+  </data>
+  <data name="N0MustArray" xml:space="preserve">
+    <value>{0} must be an array</value>
+  </data>
+  <data name="N0MustASCIIStringNoLongerThan65535" xml:space="preserve">
+    <value>{0} must be an ASCII string no longer than 65535 characters</value>
+  </data>
+  <data name="N0Invalid" xml:space="preserve">
+    <value>{0} is invalid</value>
+  </data>
+  <data name="N0DoesNotReference1" xml:space="preserve">
+    <value>{0} does not reference {1}</value>
+  </data>
+  <data name="NameAttributeOf0InconsistentWithExtraJson" xml:space="preserve">
+    <value>The name attribute of {0} is inconsistent with extra.json</value>
+  </data>
+  <data name="NameAttributeOf0Should1" xml:space="preserve">
+    <value>The name attribute of {0} should be {1}</value>
+  </data>
+  <data name="N1AttributeOf0NotValidInteger" xml:space="preserve">
+    <value>The {1} attribute of {0} is not a valid integer</value>
+  </data>
+  <data name="Layer1Of0" xml:space="preserve">
+    <value>layer {1} of {0}</value>
+  </data>
+  <data name="Instance1Of0NotValidImageOr" xml:space="preserve">
+    <value>Instance {1} of {0} is not a valid image or sprite reference</value>
+  </data>
+  <data name="RootNodeOf0MustDOMSymbolItem" xml:space="preserve">
+    <value>The root node of {0} must be DOMSymbolItem</value>
+  </data>
+  <data name="ScriptOf0MustCDATAText" xml:space="preserve">
+    <value>The script of {0} must be CDATA text</value>
+  </data>
+  <data name="N0Lacks1Node" xml:space="preserve">
+    <value>{0} lacks the {1} node</value>
+  </data>
+  <data name="N0LacksContent" xml:space="preserve">
+    <value>{0} lacks content</value>
+  </data>
+  <data name="N0ExceedsLimitRequested1Maximum2" xml:space="preserve">
+    <value>{0} exceeds the limit: requested {1}, maximum {2}</value>
+  </data>
+  <data name="PaddedLPCMSamplesAreNotSupported" xml:space="preserve">
+    <value>Padded LPCM samples are not supported</value>
+  </data>
+  <data name="UnsupportedAACSampleRate0" xml:space="preserve">
+    <value>Unsupported AAC sample rate {0}</value>
+  </data>
+  <data name="UnsupportedCAFVersion" xml:space="preserve">
+    <value>Unsupported CAF version</value>
+  </data>
+  <data name="UnsupportedCAFAudioFormat0" xml:space="preserve">
+    <value>Unsupported CAF audio format "{0}"</value>
+  </data>
+  <data name="UnsupportedCFU2Version" xml:space="preserve">
+    <value>Unsupported CFU2 version</value>
+  </data>
+  <data name="UnsupportedDzVersion" xml:space="preserve">
+    <value>Unsupported Dz version</value>
+  </data>
+  <data name="UnsupportedEAACChannelCount" xml:space="preserve">
+    <value>Unsupported EAAC channel count</value>
+  </data>
+  <data name="UnsupportedEALayer3PCMPatchLayout" xml:space="preserve">
+    <value>Unsupported EALayer3 PCM patch layout</value>
+  </data>
+  <data name="UnsupportedLPCMPacketLayout" xml:space="preserve">
+    <value>Unsupported LPCM packet layout</value>
+  </data>
+  <data name="UnsupportedLPCMIntegerBitDepth" xml:space="preserve">
+    <value>Unsupported LPCM integer bit depth</value>
+  </data>
+  <data name="UnsupportedLPCMFloatingPointBitDepth" xml:space="preserve">
+    <value>Unsupported LPCM floating-point bit depth</value>
+  </data>
+  <data name="UnsupportedPAMVersion0" xml:space="preserve">
+    <value>Unsupported PAM version {0}</value>
+  </data>
+  <data name="UnsupportedPAXVersion" xml:space="preserve">
+    <value>Unsupported PAX version</value>
+  </data>
+  <data name="UnsupportedPCMBitDepth0" xml:space="preserve">
+    <value>Unsupported PCM bit depth: {0}</value>
+  </data>
+  <data name="UnsupportedPOPFXVersionVariant0" xml:space="preserve">
+    <value>Unsupported POPFX version variant {0}</value>
+  </data>
+  <data name="UnsupportedPOPFXVersion0" xml:space="preserve">
+    <value>Unsupported POPFX version {0}</value>
+  </data>
+  <data name="UnsupportedPPFVersion0" xml:space="preserve">
+    <value>Unsupported PPF version {0}</value>
+  </data>
+  <data name="UnsupportedRSBPacketRecordSize0" xml:space="preserve">
+    <value>Unsupported RSB packet record size: {0}</value>
+  </data>
+  <data name="UnsupportedSPSEncoding0" xml:space="preserve">
+    <value>Unsupported SPS encoding {0}</value>
+  </data>
+  <data name="UnsupportedWMACodec" xml:space="preserve">
+    <value>Unsupported WMA codec</value>
+  </data>
+  <data name="UnsupportedXNBVersion0" xml:space="preserve">
+    <value>Unsupported XNB version: {0}</value>
+  </data>
+  <data name="UnsupportedIma4PacketLayout" xml:space="preserve">
+    <value>Unsupported ima4 packet layout</value>
+  </data>
+  <data name="UnsupportedBitWidth0" xml:space="preserve">
+    <value>Unsupported bit width {0}</value>
+  </data>
+  <data name="UnsupportedHashAlgorithm0" xml:space="preserve">
+    <value>Unsupported hash algorithm: {0}</value>
+  </data>
+  <data name="UnsupportedCharacterSetUTF16" xml:space="preserve">
+    <value>Unsupported character set UTF-16</value>
+  </data>
+  <data name="UnsupportedFloatingPointBitDepth0" xml:space="preserve">
+    <value>Unsupported floating-point bit depth: {0}</value>
+  </data>
+  <data name="UnsupportedPatchVersion0" xml:space="preserve">
+    <value>Unsupported patch version: {0}</value>
+  </data>
+  <data name="UnsupportedChannelCount" xml:space="preserve">
+    <value>Unsupported channel count</value>
+  </data>
+  <data name="UnsupportedAudioFormat0x0X4" xml:space="preserve">
+    <value>Unsupported audio format: 0x{0:X4}</value>
+  </data>
+  <data name="NonInterleavedLPCMCAFNotSupported" xml:space="preserve">
+    <value>Non-interleaved LPCM CAF is not supported</value>
+  </data>
+  <data name="NotSupportedFontWidgetDATFile" xml:space="preserve">
+    <value>Not a supported FontWidget DAT file</value>
+  </data>
+  <data name="NotSupportedWEMFile" xml:space="preserve">
+    <value>Not a supported WEM file</value>
+  </data>
+  <data name="NotSupportedXMModule" xml:space="preserve">
+    <value>Not a supported XM module</value>
+  </data>
+  <data name="NotValidDzFile" xml:space="preserve">
+    <value>Not a valid Dz file</value>
+  </data>
+  <data name="NotValidRSBFile" xml:space="preserve">
+    <value>Not a valid RSB file</value>
+  </data>
+  <data name="NotValidRSGPPacket" xml:space="preserve">
+    <value>Not a valid RSGP packet</value>
+  </data>
+  <data name="NotValidRsbPatchFile" xml:space="preserve">
+    <value>Not a valid RsbPatch file</value>
+  </data>
+  <data name="NotValidXNBFile" xml:space="preserve">
+    <value>Not a valid XNB file</value>
+  </data>
+  <data name="MainSpriteSymbol" xml:space="preserve">
+    <value>main sprite symbol</value>
+  </data>
+  <data name="BitField" xml:space="preserve">
+    <value>bit field</value>
+  </data>
+  <data name="BitFieldParametersMustAppearInPairs" xml:space="preserve">
+    <value>Bit field parameters must appear in pairs</value>
+  </data>
+  <data name="BitFieldOutOfRangeOffset0Count" xml:space="preserve">
+    <value>Bit field out of range: offset={0} count={1}</value>
+  </data>
+  <data name="PositionOutOfRange01" xml:space="preserve">
+    <value>Position out of range: {0}/{1}</value>
+  </data>
+  <data name="ReservedBitsAreNonZero0x0X" xml:space="preserve">
+    <value>Reserved bits are non-zero: 0x{0:X}</value>
+  </data>
+  <data name="InnerException" xml:space="preserve">
+    <value>Inner exception:</value>
+  </data>
+  <data name="ChunkHeaderTruncated" xml:space="preserve">
+    <value>Chunk header is truncated</value>
+  </data>
+  <data name="ChunkExceedsFileSize" xml:space="preserve">
+    <value>Chunk exceeds the file size</value>
+  </data>
+  <data name="ChunkTooLarge" xml:space="preserve">
+    <value>Chunk is too large</value>
+  </data>
+  <data name="ListLengthInvalid" xml:space="preserve">
+    <value>List length is invalid</value>
+  </data>
+  <data name="ErrorCreatingOGGFile" xml:space="preserve">
+    <value>Error creating OGG file</value>
+  </data>
+  <data name="ErrorCreatingFileHeader" xml:space="preserve">
+    <value>Error creating file header</value>
+  </data>
+  <data name="TooManyPackets" xml:space="preserve">
+    <value>Too many packets</value>
+  </data>
+  <data name="CompressedDataDoesNotContainCompletePacket" xml:space="preserve">
+    <value>Compressed data does not contain a complete packet</value>
+  </data>
+  <data name="OriginalPacketDoesNotMatchPatch0" xml:space="preserve">
+    <value>The original packet does not match the patch: {0}</value>
+  </data>
+  <data name="OriginalFileDoesNotMatchPatch" xml:space="preserve">
+    <value>The original file does not match the patch</value>
+  </data>
+  <data name="TransformCountInvalid0" xml:space="preserve">
+    <value>Transform count is invalid: {0}</value>
+  </data>
+  <data name="VariableLengthCompressedCAFRequiresPaktChunk" xml:space="preserve">
+    <value>Variable-length compressed CAF requires a pakt chunk</value>
+  </data>
+  <data name="ImageTransformNotPureRotationMatrixAndCannot" xml:space="preserve">
+    <value>The image transform is not a pure rotation matrix and cannot be written to PAM versions below 2</value>
+  </data>
+  <data name="ImageTransformDeviatesTooMuchFromRotationMatrix" xml:space="preserve">
+    <value>The image transform deviates too much from a rotation matrix</value>
+  </data>
+  <data name="ImageReferenceCannotNull" xml:space="preserve">
+    <value>Image reference cannot be null</value>
+  </data>
+  <data name="ImageReferenceMustStringOrNumber" xml:space="preserve">
+    <value>Image reference must be a string or a number</value>
+  </data>
+  <data name="ImageDoesNotFitIntoSpecifiedAtlasSize" xml:space="preserve">
+    <value>The image does not fit into the specified atlas size: {0}</value>
+  </data>
+  <data name="ImageSymbol0" xml:space="preserve">
+    <value>image symbol {0}</value>
+  </data>
+  <data name="ImageDecodingFailed0" xml:space="preserve">
+    <value>Image decoding failed: {0}</value>
+  </data>
+  <data name="ImageReadingFailed" xml:space="preserve">
+    <value>Image reading failed</value>
+  </data>
+  <data name="LayerOffset" xml:space="preserve">
+    <value>layer offset</value>
+  </data>
+  <data name="LayerEmitter" xml:space="preserve">
+    <value>layer emitter</value>
+  </data>
+  <data name="LayerEmitterState" xml:space="preserve">
+    <value>layer emitter state</value>
+  </data>
+  <data name="LayerName" xml:space="preserve">
+    <value>layer name</value>
+  </data>
+  <data name="LayerImageName" xml:space="preserve">
+    <value>layer image name</value>
+  </data>
+  <data name="LayerCountExceedsLimit" xml:space="preserve">
+    <value>Layer count exceeds the limit</value>
+  </data>
+  <data name="LayerUnknownData3" xml:space="preserve">
+    <value>layer unknown data 3</value>
+  </data>
+  <data name="LayerUnknownData4" xml:space="preserve">
+    <value>layer unknown data 4</value>
+  </data>
+  <data name="LayerUnknownData5" xml:space="preserve">
+    <value>layer unknown data 5</value>
+  </data>
+  <data name="LayerHasNoGlyphSlots" xml:space="preserve">
+    <value>The layer has no glyph slots</value>
+  </data>
+  <data name="LayerSourceLength" xml:space="preserve">
+    <value>layer source length</value>
+  </data>
+  <data name="LayerState" xml:space="preserve">
+    <value>layer state</value>
+  </data>
+  <data name="LayerFootageId" xml:space="preserve">
+    <value>layer footage id</value>
+  </data>
+  <data name="LayerStartFrame" xml:space="preserve">
+    <value>layer start frame</value>
+  </data>
+  <data name="LayerDuration" xml:space="preserve">
+    <value>layer duration</value>
+  </data>
+  <data name="TotalPatternDataExceedsLimit" xml:space="preserve">
+    <value>Total pattern data exceeds the limit</value>
+  </data>
+  <data name="PatternRowCountExceedsLimit" xml:space="preserve">
+    <value>Pattern row count exceeds the limit</value>
+  </data>
+  <data name="AtlasContainsNoSubImages" xml:space="preserve">
+    <value>The atlas contains no sub-images</value>
+  </data>
+  <data name="AtlasDimensionsMustPositive" xml:space="preserve">
+    <value>Atlas dimensions must be positive</value>
+  </data>
+  <data name="ErrorCopyingCodebook" xml:space="preserve">
+    <value>Error copying codebook</value>
+  </data>
+  <data name="CompositeGroupContainsResources" xml:space="preserve">
+    <value>The composite group contains resources</value>
+  </data>
+  <data name="SubImageExceedsAtlasBounds0" xml:space="preserve">
+    <value>Sub-image exceeds the atlas bounds: {0}</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="StringLacksTerminator" xml:space="preserve">
+    <value>String lacks a terminator</value>
+  </data>
+  <data name="StringLengthInvalid" xml:space="preserve">
+    <value>String length is invalid</value>
+  </data>
+  <data name="KerningPairCountExceedsLimit" xml:space="preserve">
+    <value>Kerning pair count exceeds the limit</value>
+  </data>
+  <data name="BooleanIntegerInvalid" xml:space="preserve">
+    <value>Boolean integer is invalid</value>
+  </data>
+  <data name="Constant" xml:space="preserve">
+    <value>constant</value>
+  </data>
+  <data name="ConstantBitsMismatch" xml:space="preserve">
+    <value>Constant bits mismatch</value>
+  </data>
+  <data name="ExceptionStack" xml:space="preserve">
+    <value>Exception stack:</value>
+  </data>
+  <data name="ArchiveIndexOutOfRange0" xml:space="preserve">
+    <value>Archive index is out of range: {0}</value>
+  </data>
+  <data name="LoopRangeExceedsLimit" xml:space="preserve">
+    <value>Loop range exceeds the limit</value>
+  </data>
+  <data name="XFLPathMustSpecified" xml:space="preserve">
+    <value>An XFL path must be specified</value>
+  </data>
+  <data name="ZIPXFLPathMustSpecified" xml:space="preserve">
+    <value>A ZIP-XFL path must be specified</value>
+  </data>
+  <data name="PackedCodebookUnavailable" xml:space="preserve">
+    <value>Packed codebook is unavailable</value>
+  </data>
+  <data name="PackedCodebookFileInvalid" xml:space="preserve">
+    <value>Packed codebook file is invalid</value>
+  </data>
+  <data name="XFLFileNotFound0" xml:space="preserve">
+    <value>XFL file not found: {0}</value>
+  </data>
+  <data name="XFLManifestFileNotFound0" xml:space="preserve">
+    <value>XFL manifest file not found: {0}</value>
+  </data>
+  <data name="XPRResourceNotFound0" xml:space="preserve">
+    <value>XPR resource not found: {0}</value>
+  </data>
+  <data name="N0NotFound1" xml:space="preserve">
+    <value>{0} not found: {1}</value>
+  </data>
+  <data name="BuiltInCodebookNotFound0" xml:space="preserve">
+    <value>Built-in codebook not found: {0}</value>
+  </data>
+  <data name="ResourceDirectoryNotFound0" xml:space="preserve">
+    <value>Resource directory not found: {0}</value>
+  </data>
+  <data name="InputDirectoryNotFound0" xml:space="preserve">
+    <value>Input directory not found: {0}</value>
+  </data>
+  <data name="TechniqueAnnotation" xml:space="preserve">
+    <value>technique annotation</value>
+  </data>
+  <data name="TechniquePass" xml:space="preserve">
+    <value>technique pass</value>
+  </data>
+  <data name="PacketTooLarge" xml:space="preserve">
+    <value>Packet is too large</value>
+  </data>
+  <data name="DataOutOfRangeOffset0Length1" xml:space="preserve">
+    <value>Data out of range: offset {0}, length {1} exceeds {2} bytes</value>
+  </data>
+  <data name="DataTooLarge0BytesExceedsMemoryLimit" xml:space="preserve">
+    <value>Data too large: {0} bytes exceeds the memory limit</value>
+  </data>
+  <data name="DataLengthInsufficient" xml:space="preserve">
+    <value>Data length is insufficient</value>
+  </data>
+  <data name="InsufficientDataLengthOffset0Requires1Bytes" xml:space="preserve">
+    <value>Insufficient data length: offset {0} requires {1} bytes, {2} bytes remain</value>
+  </data>
+  <data name="FileDoesNotExist0" xml:space="preserve">
+    <value>File does not exist: {0}</value>
+  </data>
+  <data name="FileTrailerIncomplete" xml:space="preserve">
+    <value>File trailer is incomplete</value>
+  </data>
+  <data name="ExtraDataExistsAfterEndOfFile" xml:space="preserve">
+    <value>Extra data exists after the end of the file</value>
+  </data>
+  <data name="FileTrailerMarkerInvalid" xml:space="preserve">
+    <value>File trailer marker is invalid</value>
+  </data>
+  <data name="FileTooLarge0" xml:space="preserve">
+    <value>File is too large: {0}</value>
+  </data>
+  <data name="FileLengthInsufficient" xml:space="preserve">
+    <value>File length is insufficient</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="InvalidPAX0" xml:space="preserve">
+    <value>Invalid PAX {0}</value>
+  </data>
+  <data name="InvalidPAX0Transform" xml:space="preserve">
+    <value>Invalid PAX {0} transform</value>
+  </data>
+  <data name="InvalidPAX0LoopType1" xml:space="preserve">
+    <value>Invalid PAX {0} loop type {1}</value>
+  </data>
+  <data name="InvalidPAX0StaticFrameCount" xml:space="preserve">
+    <value>Invalid PAX {0} static frame count</value>
+  </data>
+  <data name="InvalidPAXLayerSourceLength" xml:space="preserve">
+    <value>Invalid PAX layer source length</value>
+  </data>
+  <data name="InvalidPAXLayerType" xml:space="preserve">
+    <value>Invalid PAX layer type</value>
+  </data>
+  <data name="InvalidPakCompressionMethod0" xml:space="preserve">
+    <value>Invalid Pak compression method: {0}</value>
+  </data>
+  <data name="Invalid0" xml:space="preserve">
+    <value>Invalid {0}</value>
+  </data>
+  <data name="Invalid01" xml:space="preserve">
+    <value>Invalid {0}: {1}</value>
+  </data>
+  <data name="InvalidEmitterType0" xml:space="preserve">
+    <value>Invalid emitter type: {0}</value>
+  </data>
+  <data name="InvalidFieldType0" xml:space="preserve">
+    <value>Invalid field type: {0}</value>
+  </data>
+  <data name="InvalidDataLength0" xml:space="preserve">
+    <value>Invalid data length: {0}</value>
+  </data>
+  <data name="InvalidCurveType0" xml:space="preserve">
+    <value>Invalid curve type: {0}</value>
+  </data>
+  <data name="InvalidParticleCurve0" xml:space="preserve">
+    <value>Invalid particle curve: {0}</value>
+  </data>
+  <data name="CannotInsertEmptyPatternForInvalidPattern" xml:space="preserve">
+    <value>Cannot insert an empty pattern for an invalid pattern</value>
+  </data>
+  <data name="CannotCreateImageDecoder0" xml:space="preserve">
+    <value>Cannot create image decoder: {0}</value>
+  </data>
+  <data name="CannotParsePAKFileTable" xml:space="preserve">
+    <value>Cannot parse the PAK file table</value>
+  </data>
+  <data name="UnrecognizedReanimData" xml:space="preserve">
+    <value>Unrecognized Reanim data</value>
+  </data>
+  <data name="UnrecognizedTrailData" xml:space="preserve">
+    <value>Unrecognized Trail data</value>
+  </data>
+  <data name="CannotRead0" xml:space="preserve">
+    <value>Cannot read {0}</value>
+  </data>
+  <data name="Time0YyyyMMDdHHMmSs" xml:space="preserve">
+    <value>Time: {0:yyyy-MM-dd HH:mm:ss.fff}</value>
+  </data>
+  <data name="MappedMemberInvalid" xml:space="preserve">
+    <value>Mapped member is invalid</value>
+  </data>
+  <data name="Terminating0" xml:space="preserve">
+    <value>Is terminating: {0}</value>
+  </data>
+  <data name="CompressedXNBFilesAreNotSupportedYet" xml:space="preserve">
+    <value>Compressed XNB files are not supported yet</value>
+  </data>
+  <data name="CurveTypeMustStringOrNumber" xml:space="preserve">
+    <value>Curve type must be a string or a number</value>
+  </data>
+  <data name="ExpectedPAXLayerHeader" xml:space="preserve">
+    <value>Expected a PAX layer header</value>
+  </data>
+  <data name="Expected01" xml:space="preserve">
+    <value>Expected {0}, but was {1}</value>
+  </data>
+  <data name="IndefiniteLengthOnlyValidForDataChunk" xml:space="preserve">
+    <value>Indefinite length is only valid for the data chunk</value>
+  </data>
+  <data name="DOMDocumentXmlOfXFLProjectNotFound" xml:space="preserve">
+    <value>DOMDocument.xml of the XFL project was not found</value>
+  </data>
+  <data name="ZIPXFLArchiveNotFound" xml:space="preserve">
+    <value>ZIP-XFL archive was not found</value>
+  </data>
+  <data name="PlistFramesDictionaryNotFound" xml:space="preserve">
+    <value>plist frames dictionary was not found</value>
+  </data>
+  <data name="N0NodeNotFound" xml:space="preserve">
+    <value>The {0} node was not found</value>
+  </data>
+  <data name="AtlasInfoNotFound" xml:space="preserve">
+    <value>Atlas info was not found</value>
+  </data>
+  <data name="UnknownPAKFileType0x0X8" xml:space="preserve">
+    <value>Unknown PAK file type: 0x{0:X8}</value>
+  </data>
+  <data name="UnknownPAMTransformType" xml:space="preserve">
+    <value>Unknown PAM transform type</value>
+  </data>
+  <data name="UnknownPAMTransformType0" xml:space="preserve">
+    <value>Unknown PAM transform type {0}</value>
+  </data>
+  <data name="UnknownPAXTransformMarker0" xml:space="preserve">
+    <value>Unknown PAX transform marker {0}</value>
+  </data>
+  <data name="UnknownParticleMarker0" xml:space="preserve">
+    <value>Unknown particle marker: {0}</value>
+  </data>
+  <data name="UnknownGroupType0" xml:space="preserve">
+    <value>Unknown group type {0}</value>
+  </data>
+  <data name="UnknownGroupTypeOrdinal0" xml:space="preserve">
+    <value>Unknown group type ordinal {0}</value>
+  </data>
+  <data name="UnknownResourceType0" xml:space="preserve">
+    <value>Unknown resource type {0}</value>
+  </data>
+  <data name="UnknownResourceTypeOrdinal0" xml:space="preserve">
+    <value>Unknown resource type ordinal {0}</value>
+  </data>
+  <data name="Source0" xml:space="preserve">
+    <value>Source: {0}</value>
+  </data>
+  <data name="FormatMarkerMismatch" xml:space="preserve">
+    <value>Format marker mismatch</value>
+  </data>
+  <data name="FormatMarkerMismatch0x0X8Expected0x" xml:space="preserve">
+    <value>Format marker mismatch: 0x{0:X8}, expected 0x{1:X8}</value>
+  </data>
+  <data name="ModuleInstrumentCountExceedsLimit" xml:space="preserve">
+    <value>Module instrument count exceeds the limit</value>
+  </data>
+  <data name="ModulePatternCountExceedsLimit" xml:space="preserve">
+    <value>Module pattern count exceeds the limit</value>
+  </data>
+  <data name="ModuleHeaderInconsistentWithActualStructure" xml:space="preserve">
+    <value>Module header is inconsistent with the actual structure</value>
+  </data>
+  <data name="ModuleChannelCountExceedsLimit" xml:space="preserve">
+    <value>Module channel count exceeds the limit</value>
+  </data>
+  <data name="DerivedKeyMaterialInsufficient" xml:space="preserve">
+    <value>Derived key material is insufficient</value>
+  </data>
+  <data name="Stream" xml:space="preserve">
+    <value>stream</value>
+  </data>
+  <data name="SourceFileInvalid" xml:space="preserve">
+    <value>Source file is invalid</value>
+  </data>
+  <data name="SourceVersionInvalid" xml:space="preserve">
+    <value>Source version is invalid</value>
+  </data>
+  <data name="ErrorGeneratingVorbisPackets" xml:space="preserve">
+    <value>Error generating Vorbis packets</value>
+  </data>
+  <data name="TargetAlreadyDirectory0" xml:space="preserve">
+    <value>Target is already a directory: {0}</value>
+  </data>
+  <data name="TargetVersionInvalid" xml:space="preserve">
+    <value>Target version is invalid</value>
+  </data>
+  <data name="ShaderParameter" xml:space="preserve">
+    <value>shader parameter</value>
+  </data>
+  <data name="CodebookSyncModeInvalid" xml:space="preserve">
+    <value>Codebook sync mode is invalid</value>
+  </data>
+  <data name="CodebookIndexInvalid" xml:space="preserve">
+    <value>Codebook index is invalid</value>
+  </data>
+  <data name="SimpleGroupContainsSubgroups" xml:space="preserve">
+    <value>The simple group contains subgroups</value>
+  </data>
+  <data name="ParticleJSONContentEmpty" xml:space="preserve">
+    <value>Particle JSON content is empty</value>
+  </data>
+  <data name="ParticleXMLContentInvalid" xml:space="preserve">
+    <value>Particle XML content is invalid</value>
+  </data>
+  <data name="ParticleEmitterCountInvalid0" xml:space="preserve">
+    <value>Particle emitter count is invalid: {0}</value>
+  </data>
+  <data name="ParticleDefinitionState" xml:space="preserve">
+    <value>particle definition state</value>
+  </data>
+  <data name="ParticleFileHeaderInvalid" xml:space="preserve">
+    <value>Particle file header is invalid</value>
+  </data>
+  <data name="ParticleCurveMustStringOrNumber" xml:space="preserve">
+    <value>Particle curve must be a string or a number</value>
+  </data>
+  <data name="ParticleMarkerMustArrayOrNumber" xml:space="preserve">
+    <value>Particle marker must be an array or a number</value>
+  </data>
+  <data name="ParticleMarkerArrayIncomplete" xml:space="preserve">
+    <value>Particle marker array is incomplete</value>
+  </data>
+  <data name="ParticleMarkerItemMustStringOrNumber" xml:space="preserve">
+    <value>Particle marker item must be a string or a number</value>
+  </data>
+  <data name="ParticleTrackNodeIncomplete" xml:space="preserve">
+    <value>Particle track node is incomplete</value>
+  </data>
+  <data name="ParticleTrackNodeAttributeInvalid" xml:space="preserve">
+    <value>Particle track node attribute is invalid</value>
+  </data>
+  <data name="ParticleTrackNodeMustObject" xml:space="preserve">
+    <value>Particle track node must be an object</value>
+  </data>
+  <data name="SpriteSymbol0" xml:space="preserve">
+    <value>sprite symbol {0}</value>
+  </data>
+  <data name="MissingWAVEIdentifier" xml:space="preserve">
+    <value>Missing WAVE identifier</value>
+  </data>
+  <data name="MissingDescOrDataChunk" xml:space="preserve">
+    <value>Missing desc or data chunk</value>
+  </data>
+  <data name="MissingTerminator" xml:space="preserve">
+    <value>Missing terminator</value>
+  </data>
+  <data name="MissingInputImage0" xml:space="preserve">
+    <value>Missing input image: {0}</value>
+  </data>
+  <data name="GroupFixedMarkerInvalid" xml:space="preserve">
+    <value>Group fixed marker is invalid</value>
+  </data>
+  <data name="FreeEmitter" xml:space="preserve">
+    <value>free emitter</value>
+  </data>
+  <data name="FreeEmitterParticleDefinitionState" xml:space="preserve">
+    <value>free emitter particle definition state</value>
+  </data>
+  <data name="FreeParticleDefinitionState" xml:space="preserve">
+    <value>free particle definition state</value>
+  </data>
+  <data name="PatchPacketNameMismatch0" xml:space="preserve">
+    <value>Patch packet name mismatch: {0}</value>
+  </data>
+  <data name="PatchPacketCountInconsistentWithRSB" xml:space="preserve">
+    <value>Patch packet count is inconsistent with the RSB</value>
+  </data>
+  <data name="InfoRegionLengthRestoredFromPatchInconsistent" xml:space="preserve">
+    <value>The info region length restored from the patch is inconsistent</value>
+  </data>
+  <data name="SettingValue" xml:space="preserve">
+    <value>setting value</value>
+  </data>
+  <data name="SettingAnnotation" xml:space="preserve">
+    <value>setting annotation</value>
+  </data>
+  <data name="EncounteredEndOfFileWhileReadingWEMData" xml:space="preserve">
+    <value>Encountered end of file while reading WEM data</value>
+  </data>
+  <data name="ErrorReadingFile" xml:space="preserve">
+    <value>Error reading file</value>
+  </data>
+  <data name="ResourceFixedMarkerInvalid" xml:space="preserve">
+    <value>Resource fixed marker is invalid</value>
+  </data>
+  <data name="ResourceBlockArchiveIndexOutOfRange0" xml:space="preserve">
+    <value>Resource block archive index is out of range: {0}</value>
+  </data>
+  <data name="ResourceBlockIndexOutOfRange01" xml:space="preserve">
+    <value>Resource block index is out of range: {0}/{1}</value>
+  </data>
+  <data name="ResourcePathIllegal0" xml:space="preserve">
+    <value>Resource path is illegal: {0}</value>
+  </data>
+  <data name="TrailNodeIncomplete" xml:space="preserve">
+    <value>Trail node is incomplete</value>
+  </data>
+  <data name="TrailNodeAttributeInvalid" xml:space="preserve">
+    <value>Trail node attribute is invalid</value>
+  </data>
+  <data name="TrailNodeMustObject" xml:space="preserve">
+    <value>Trail node must be an object</value>
+  </data>
+  <data name="TrailNodeCountInvalid0" xml:space="preserve">
+    <value>Trail node count is invalid: {0}</value>
+  </data>
+  <data name="TrackCountInvalid0" xml:space="preserve">
+    <value>Track count is invalid: {0}</value>
+  </data>
+  <data name="InputNotCAFFile" xml:space="preserve">
+    <value>Input is not a CAF file</value>
+  </data>
+  <data name="InputNotPAMJSONFile0" xml:space="preserve">
+    <value>Input is not a PAM JSON file: {0}</value>
+  </data>
+  <data name="InputNotRIFFWAVEFile" xml:space="preserve">
+    <value>Input is not a RIFF/WAVE file</value>
+  </data>
+  <data name="InputNotXFLProjectDirectory0" xml:space="preserve">
+    <value>Input is not an XFL project directory: {0}</value>
+  </data>
+  <data name="InputNotXMA2Audio" xml:space="preserve">
+    <value>Input is not XMA2 audio</value>
+  </data>
+  <data name="InputMust16BitPCMWAV" xml:space="preserve">
+    <value>Input must be 16-bit PCM WAV</value>
+  </data>
+  <data name="InputDirectoryContainsNoPNGFiles" xml:space="preserve">
+    <value>The input directory contains no PNG files</value>
+  </data>
+  <data name="RuntimeVersion0" xml:space="preserve">
+    <value>Runtime version: {0}</value>
+  </data>
+  <data name="ProcessArchitecture0" xml:space="preserve">
+    <value>Process architecture: {0}</value>
+  </data>
+  <data name="ChannelCountInvalid" xml:space="preserve">
+    <value>Channel count is invalid</value>
+  </data>
+  <data name="ChannelAnnotation" xml:space="preserve">
+    <value>channel annotation</value>
+  </data>
+  <data name="ChannelSetting" xml:space="preserve">
+    <value>channel setting</value>
+  </data>
+  <data name="TotalSampleDataExceedsLimit" xml:space="preserve">
+    <value>Total sample data exceeds the limit</value>
+  </data>
+  <data name="SampleDataExceedsModuleBounds" xml:space="preserve">
+    <value>Sample data exceeds the module bounds</value>
+  </data>
+  <data name="SampleDataLengthDoesNotMatchChannelCount" xml:space="preserve">
+    <value>Sample data length does not match the channel count</value>
+  </data>
+  <data name="SampleRateInvalid" xml:space="preserve">
+    <value>Sample rate is invalid</value>
+  </data>
+  <data name="SampleIndexOutOfRange" xml:space="preserve">
+    <value>Sample index is out of range</value>
+  </data>
+  <data name="SampleLengthExceedsLimit" xml:space="preserve">
+    <value>Sample length exceeds the limit</value>
+  </data>
+  <data name="ErrorRebuildingCodebook" xml:space="preserve">
+    <value>Error rebuilding codebook</value>
+  </data>
+  <data name="Illegal0String" xml:space="preserve">
+    <value>Illegal {0} string</value>
+  </data>
+  <data name="SoundEffectFormatHeaderLengthInvalid0" xml:space="preserve">
+    <value>Sound effect format header length is invalid: {0}</value>
+  </data>
+  <data name="SoundEffectSampleDataLengthInvalid0" xml:space="preserve">
+    <value>Sound effect sample data length is invalid: {0}</value>
+  </data>
+  <data name="AudioFormatHeaderTruncated" xml:space="preserve">
+    <value>Audio format header is truncated</value>
+  </data>
+  <data name="AudioChannelCountInvalid0" xml:space="preserve">
+    <value>Audio channel count is invalid: {0}</value>
+  </data>
+  <data name="AudioSampleRateInvalid0" xml:space="preserve">
+    <value>Audio sample rate is invalid: {0}</value>
+  </data>
+</root>

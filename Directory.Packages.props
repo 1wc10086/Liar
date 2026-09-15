@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Avalonia" Version="12.1.1" />
+    <PackageVersion Include="Avalonia.Android" Version="12.1.1" />
+    <PackageVersion Include="Avalonia.Desktop" Version="12.1.1" />
+    <PackageVersion Include="Avalonia.iOS" Version="12.1.1" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.1" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageVersion Include="KevInc.Audio.Xma2" Version="0.2.4" />
+    <PackageVersion Include="NLayer" Version="3.0.0" />
+    <PackageVersion Include="NVorbis" Version="0.10.5" />
+    <PackageVersion Include="SharpJaad.AAC" Version="0.1.1" />
+    <PackageVersion Include="SharpCompress" Version="0.50.4" />
+    <PackageVersion Include="SkiaSharp" Version="3.119.4" />
+    <PackageVersion Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.119.4" />
+    <PackageVersion Include="SkiaSharp.NativeAssets.macOS" Version="3.119.4" />
+    <PackageVersion Include="PublishAotCross" Version="1.0.0" />
+    <PackageVersion Include="VCDiff" Version="3.3.2" />
+  </ItemGroup>
+</Project>

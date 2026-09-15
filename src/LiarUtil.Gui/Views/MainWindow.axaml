@@ -1,0 +1,13 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="using:LiarUtil.Gui.Views"
+        x:Class="LiarUtil.Gui.Views.MainWindow"
+        Title="LiarUtil"
+        Width="520"
+        Height="840"
+        MinWidth="360"
+        MinHeight="480"
+        Icon="avares://LiarUtil.Gui/Assets/Logo/logo.png"
+        Background="{DynamicResource Md3SurfaceBrush}">
+  <views:MainView />
+</Window>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>XMemCompressionDotNet</RootNamespace>
+    <AssemblyName>XMemCompressionDotNet</AssemblyName>
+  </PropertyGroup>
+
+</Project>

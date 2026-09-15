@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Stack0" xml:space="preserve">
+    <value>  堆栈: {0}</value>
+  </data>
+  <data name="Message0" xml:space="preserve">
+    <value>  消息: {0}</value>
+  </data>
+  <data name="Type0" xml:space="preserve">
+    <value>  类型: {0}</value>
+  </data>
+  <data name="ARCVDataIncompleteExpected0BytesGot1" xml:space="preserve">
+    <value>ARCV 数据不完整：需要 {0} 字节，实际 {1} 字节</value>
+  </data>
+  <data name="ARCVFileHeaderIncorrect" xml:space="preserve">
+    <value>ARCV 文件头不正确</value>
+  </data>
+  <data name="ARCVFileCountInvalid0" xml:space="preserve">
+    <value>ARCV 文件数量无效：{0}</value>
+  </data>
+  <data name="ARCVEntryOutOfRangeOffset0Length" xml:space="preserve">
+    <value>ARCV 条目越界：偏移 {0}，长度 {1}</value>
+  </data>
+  <data name="InvalidASFHeader" xml:space="preserve">
+    <value>ASF 头无效</value>
+  </data>
+  <data name="CFU2JSONContentEmpty" xml:space="preserve">
+    <value>CFU2 JSON 内容为空</value>
+  </data>
+  <data name="CFU2ListCountOutOfRange0" xml:space="preserve">
+    <value>CFU2 列表数量越界: {0}</value>
+  </data>
+  <data name="CFU2StringContainsCharactersThatCannotEncoded" xml:space="preserve">
+    <value>CFU2 字符串包含无法编码的字符</value>
+  </data>
+  <data name="CFU2StringLengthOutOfRange0" xml:space="preserve">
+    <value>CFU2 字符串长度越界: {0}</value>
+  </data>
+  <data name="CFU2CharacterStringLengthMust1" xml:space="preserve">
+    <value>CFU2 字符字符串长度必须为 1</value>
+  </data>
+  <data name="CFU2CharacterMustSingleCharacterStringOrNumber" xml:space="preserve">
+    <value>CFU2 字符必须是单字符字符串或 0-65535 的数字</value>
+  </data>
+  <data name="CFU2CharacterIndexOutOfRange0" xml:space="preserve">
+    <value>CFU2 字符索引越界: {0}</value>
+  </data>
+  <data name="CFU2ValueOutOfInt16Range0" xml:space="preserve">
+    <value>CFU2 数值超出 int16 范围: {0}</value>
+  </data>
+  <data name="CFU2DataLengthInsufficient" xml:space="preserve">
+    <value>CFU2 数据长度不足</value>
+  </data>
+  <data name="CFU2MarkerMismatch" xml:space="preserve">
+    <value>CFU2 标记不匹配</value>
+  </data>
+  <data name="CFW2JSONContentEmpty" xml:space="preserve">
+    <value>CFW2 JSON 内容为空</value>
+  </data>
+  <data name="CFW2ListCountOutOfRange0" xml:space="preserve">
+    <value>CFW2 列表数量越界: {0}</value>
+  </data>
+  <data name="CFW2StringContainsCharactersThatCannotEncoded" xml:space="preserve">
+    <value>CFW2 字符串包含无法编码的字符</value>
+  </data>
+  <data name="CFW2StringLengthOutOfRange0" xml:space="preserve">
+    <value>CFW2 字符串长度越界: {0}</value>
+  </data>
+  <data name="CFW2CharacterStringLengthMust1" xml:space="preserve">
+    <value>CFW2 字符字符串长度必须为 1</value>
+  </data>
+  <data name="CFW2CharacterMustSingleCharacterStringOrNumber" xml:space="preserve">
+    <value>CFW2 字符必须是单字符字符串或 0-65535 的数字</value>
+  </data>
+  <data name="CFW2DataLengthInsufficient" xml:space="preserve">
+    <value>CFW2 数据长度不足</value>
+  </data>
+  <data name="DOMDocumentXmlContentEmpty" xml:space="preserve">
+    <value>DOMDocument.xml 内容为空</value>
+  </data>
+  <data name="RootNodeOfDOMDocumentXmlMustDOMDocument" xml:space="preserve">
+    <value>DOMDocument.xml 的根节点必须是 DOMDocument</value>
+  </data>
+  <data name="InvalidEALayer3MPEGParameters" xml:space="preserve">
+    <value>EALayer3 MPEG 参数无效</value>
+  </data>
+  <data name="EALayer3MPEGDecodingFailed" xml:space="preserve">
+    <value>EALayer3 MPEG 解码失败</value>
+  </data>
+  <data name="InvalidEALayer3FrameSize" xml:space="preserve">
+    <value>EALayer3 帧大小无效</value>
+  </data>
+  <data name="InvalidEALayer3FrameLayout" xml:space="preserve">
+    <value>EALayer3 帧布局无效</value>
+  </data>
+  <data name="EALayer3FrameTruncated" xml:space="preserve">
+    <value>EALayer3 帧被截断</value>
+  </data>
+  <data name="EALayer3GranulePairMismatch" xml:space="preserve">
+    <value>EALayer3 粒度对不匹配</value>
+  </data>
+  <data name="FMTChunkBitDepthError" xml:space="preserve">
+    <value>FMT 分块位深错误</value>
+  </data>
+  <data name="FMTChunkBlockAlignmentError" xml:space="preserve">
+    <value>FMT 分块块对齐错误</value>
+  </data>
+  <data name="FMTChunkExtensionLengthError" xml:space="preserve">
+    <value>FMT 分块扩展长度错误</value>
+  </data>
+  <data name="FMTChunkUnknownBufferSignatureError" xml:space="preserve">
+    <value>FMT 分块未知缓冲区签名错误</value>
+  </data>
+  <data name="FMTChunkCodecIdentifierError" xml:space="preserve">
+    <value>FMT 分块编解码器标识错误</value>
+  </data>
+  <data name="FontWidgetDATJSONContentEmpty" xml:space="preserve">
+    <value>FontWidget DAT JSON 内容为空</value>
+  </data>
+  <data name="G711DataDoesNotContainCompleteFrame" xml:space="preserve">
+    <value>G.711 数据不包含完整帧</value>
+  </data>
+  <data name="InvalidIMAADPCMBlockAlignment" xml:space="preserve">
+    <value>IMA ADPCM 块对齐无效</value>
+  </data>
+  <data name="ImageStringContentInvalid" xml:space="preserve">
+    <value>ImageString 内容无效</value>
+  </data>
+  <data name="ImageStringRootNodeInvalid" xml:space="preserve">
+    <value>ImageString 根节点无效</value>
+  </data>
+  <data name="JSONContentInvalid0" xml:space="preserve">
+    <value>JSON 内容无效：{0}</value>
+  </data>
+  <data name="JSONRootNodeMustObject" xml:space="preserve">
+    <value>JSON 根节点必须是对象</value>
+  </data>
+  <data name="JSONRootNodeInvalid" xml:space="preserve">
+    <value>JSON 根节点无效</value>
+  </data>
+  <data name="JSONLacksGroupsArray" xml:space="preserve">
+    <value>JSON 缺少 groups 数组</value>
+  </data>
+  <data name="LPCMDataDoesNotContainCompleteFrame" xml:space="preserve">
+    <value>LPCM 数据不包含完整帧</value>
+  </data>
+  <data name="InvalidLPCMSampleLayout" xml:space="preserve">
+    <value>LPCM 采样布局无效</value>
+  </data>
+  <data name="LZMADataLengthInsufficient" xml:space="preserve">
+    <value>LZMA 数据长度不足</value>
+  </data>
+  <data name="InvalidLZMARecordLength" xml:space="preserve">
+    <value>LZMA 记录长度无效</value>
+  </data>
+  <data name="InvalidMP3BitReadLength" xml:space="preserve">
+    <value>MP3 位读取长度无效</value>
+  </data>
+  <data name="MP3FrameDataInsufficient" xml:space="preserve">
+    <value>MP3 帧数据不足</value>
+  </data>
+  <data name="InvalidMSADPCMBlockAlignment" xml:space="preserve">
+    <value>MS ADPCM 块对齐无效</value>
+  </data>
+  <data name="MSADPCMPredictorCoefficientIndexOutOfRange" xml:space="preserve">
+    <value>MS ADPCM 预测系数索引越界：{0}</value>
+  </data>
+  <data name="InsufficientOGGPacketSpace" xml:space="preserve">
+    <value>OGG 包空间不足</value>
+  </data>
+  <data name="InvalidOGGAudioParameters" xml:space="preserve">
+    <value>OGG 音频参数无效</value>
+  </data>
+  <data name="PAKFileEmptyOrTruncated" xml:space="preserve">
+    <value>PAK 文件为空或已截断</value>
+  </data>
+  <data name="PAKFileNameTooLong0" xml:space="preserve">
+    <value>PAK 文件名过长：{0}</value>
+  </data>
+  <data name="PAKFileTableTruncated" xml:space="preserve">
+    <value>PAK 文件表已截断</value>
+  </data>
+  <data name="PAKFileTableEntry0Illegal1" xml:space="preserve">
+    <value>PAK 文件表第 {0} 项非法：{1}</value>
+  </data>
+  <data name="PAMJSONContentEmpty" xml:space="preserve">
+    <value>PAM JSON 内容为空</value>
+  </data>
+  <data name="PAMMainSpriteMissing" xml:space="preserve">
+    <value>PAM 主精灵缺失</value>
+  </data>
+  <data name="PAMImageTransformTypeDoesNotMatchVersion" xml:space="preserve">
+    <value>PAM 图像变换类型与版本不匹配</value>
+  </data>
+  <data name="PAMSpriteFrame0ModifiesLayerThatDoes" xml:space="preserve">
+    <value>PAM 精灵第 {0} 帧修改了不存在的层 {1}</value>
+  </data>
+  <data name="PAMSpriteFrame0ReferencesOutOfRange" xml:space="preserve">
+    <value>PAM 精灵第 {0} 帧引用了越界的精灵资源 {1}</value>
+  </data>
+  <data name="PAMMagicNumberIncorrect" xml:space="preserve">
+    <value>PAM 魔数不正确</value>
+  </data>
+  <data name="PAXJSONContentEmpty" xml:space="preserve">
+    <value>PAX JSON 内容为空</value>
+  </data>
+  <data name="PAX0ExceedsEncodableLength" xml:space="preserve">
+    <value>PAX {0} 超出编码长度</value>
+  </data>
+  <data name="PAX0LengthInvalid" xml:space="preserve">
+    <value>PAX {0} 长度无效</value>
+  </data>
+  <data name="PAX0StaticFrameCountInconsistentWithFrame" xml:space="preserve">
+    <value>PAX {0} 静态帧数量与帧列表不一致</value>
+  </data>
+  <data name="PAXTransformKeyframeMissingValues" xml:space="preserve">
+    <value>PAX 变换关键帧缺少数值</value>
+  </data>
+  <data name="PAXTransformHasNoKeyframes" xml:space="preserve">
+    <value>PAX 变换没有关键帧</value>
+  </data>
+  <data name="PAXStringNotValidUTF8Sequence" xml:space="preserve">
+    <value>PAX 字符串不是合法的 UTF-8 序列</value>
+  </data>
+  <data name="PAXFileHasExtraDataAtEnd" xml:space="preserve">
+    <value>PAX 文件尾部存在多余数据</value>
+  </data>
+  <data name="InvalidPCMWAVLayout" xml:space="preserve">
+    <value>PCM WAV 布局无效</value>
+  </data>
+  <data name="PNGEncodingFailed" xml:space="preserve">
+    <value>PNG 编码失败</value>
+  </data>
+  <data name="POPFXJSONContentEmpty" xml:space="preserve">
+    <value>POPFX JSON 内容为空</value>
+  </data>
+  <data name="POPFX0OutOfRange" xml:space="preserve">
+    <value>POPFX {0}范围越界</value>
+  </data>
+  <data name="POPFXCodeMustStringOrStringArray" xml:space="preserve">
+    <value>POPFX 代码必须是字符串或字符串数组</value>
+  </data>
+  <data name="POPFXCodeLineMustString" xml:space="preserve">
+    <value>POPFX 代码行必须是字符串</value>
+  </data>
+  <data name="POPFXValueTypeMustStringOrNumber" xml:space="preserve">
+    <value>POPFX 值类型必须是字符串或数字</value>
+  </data>
+  <data name="POPFXValueTypeInvalid0" xml:space="preserve">
+    <value>POPFX 值类型无效: {0}</value>
+  </data>
+  <data name="POPFXValueIndexOutOfRange0" xml:space="preserve">
+    <value>POPFX 值索引越界: {0}</value>
+  </data>
+  <data name="POPFXOffsetOutOfRange0" xml:space="preserve">
+    <value>POPFX 偏移越界: {0}</value>
+  </data>
+  <data name="POPFXWriteOutOfRange" xml:space="preserve">
+    <value>POPFX 写入越界</value>
+  </data>
+  <data name="POPFXStringDataOffsetOutOfRange0" xml:space="preserve">
+    <value>POPFX 字符串数据偏移越界: {0}</value>
+  </data>
+  <data name="POPFXStringIndexOutOfRange0" xml:space="preserve">
+    <value>POPFX 字符串索引越界: {0}</value>
+  </data>
+  <data name="POPFXStringOutOfRangeOffset0Length" xml:space="preserve">
+    <value>POPFX 字符串越界: 偏移 {0} 长度 {1}</value>
+  </data>
+  <data name="POPFXDataInsufficient" xml:space="preserve">
+    <value>POPFX 数据不足</value>
+  </data>
+  <data name="POPFXDataLengthInsufficient" xml:space="preserve">
+    <value>POPFX 数据长度不足</value>
+  </data>
+  <data name="POPFXSection0OutOfRange" xml:space="preserve">
+    <value>POPFX 段 {0} 越界</value>
+  </data>
+  <data name="POPFXVersionVariantDoesNotMatchFileSection" xml:space="preserve">
+    <value>POPFX 版本变体与文件不匹配: 段 {0} 大小 {1}，期望 {2}</value>
+  </data>
+  <data name="POPFXVersionVariantMustStringOrNumber" xml:space="preserve">
+    <value>POPFX 版本变体必须是字符串或数字</value>
+  </data>
+  <data name="POPFXVersionVariantInvalid0" xml:space="preserve">
+    <value>POPFX 版本变体无效: {0}</value>
+  </data>
+  <data name="POPFXShaderIndexOutOfRange0" xml:space="preserve">
+    <value>POPFX 着色器索引越界: {0}</value>
+  </data>
+  <data name="POPFXSettingTypeInvalid0" xml:space="preserve">
+    <value>POPFX 设置类型无效: {0}</value>
+  </data>
+  <data name="POPFXMagicNumberIncorrect" xml:space="preserve">
+    <value>POPFX 魔数不正确</value>
+  </data>
+  <data name="PPFJSONContentEmpty" xml:space="preserve">
+    <value>PPF JSON 内容为空</value>
+  </data>
+  <data name="PPF0CountMust12" xml:space="preserve">
+    <value>PPF {0} 数量必须为 {1}，实际为 {2}</value>
+  </data>
+  <data name="PPF0IndexOutOfRange1" xml:space="preserve">
+    <value>PPF {0} 索引越界: {1}</value>
+  </data>
+  <data name="PPF0LengthMust12" xml:space="preserve">
+    <value>PPF {0} 长度必须为 {1}，实际为 {2}</value>
+  </data>
+  <data name="PPFValuePointCountInvalid0" xml:space="preserve">
+    <value>PPF 值点数量无效: {0}</value>
+  </data>
+  <data name="PPFListCountInvalid0" xml:space="preserve">
+    <value>PPF 列表数量无效: {0}</value>
+  </data>
+  <data name="PPFHexadecimalCharacterInvalid0" xml:space="preserve">
+    <value>PPF 十六进制字符无效: {0}</value>
+  </data>
+  <data name="PPFHexadecimalDataMustString" xml:space="preserve">
+    <value>PPF 十六进制数据必须是字符串</value>
+  </data>
+  <data name="PPFHexadecimalDataLengthInvalid" xml:space="preserve">
+    <value>PPF 十六进制数据长度无效</value>
+  </data>
+  <data name="PPFEmitterIndexInvalid0" xml:space="preserve">
+    <value>PPF 发射器索引无效: {0}</value>
+  </data>
+  <data name="PPFStartupStateCountInvalid0" xml:space="preserve">
+    <value>PPF 启动状态数量无效: {0}</value>
+  </data>
+  <data name="PPFStartupStateLengthsAreInconsistent" xml:space="preserve">
+    <value>PPF 启动状态长度不一致</value>
+  </data>
+  <data name="PPFStringTooLong0Bytes" xml:space="preserve">
+    <value>PPF 字符串过长: {0} 字节</value>
+  </data>
+  <data name="PPFDataBlockLengthInvalid0" xml:space="preserve">
+    <value>PPF 数据块长度无效: {0}</value>
+  </data>
+  <data name="PPFParticleDefinitionIndexInvalid0" xml:space="preserve">
+    <value>PPF 粒子定义索引无效: {0}</value>
+  </data>
+  <data name="PPFParticleVariationCountInsufficient0" xml:space="preserve">
+    <value>PPF 粒子抖动值数量不足: {0}</value>
+  </data>
+  <data name="PPFFreeEmitterIndexInvalid0" xml:space="preserve">
+    <value>PPF 自由发射器索引无效: {0}</value>
+  </data>
+  <data name="PPFMagicNumberIncorrect" xml:space="preserve">
+    <value>PPF 魔数不正确</value>
+  </data>
+  <data name="RSBPacketOutOfRange012" xml:space="preserve">
+    <value>RSB 子包越界：{0}+{1}/{2}</value>
+  </data>
+  <data name="RSBIdentifierLengthExceeds0Bytes1" xml:space="preserve">
+    <value>RSB 标识长度超出 {0} 字节：{1}</value>
+  </data>
+  <data name="RSGPRawPacketSectionOutOfRange" xml:space="preserve">
+    <value>RSGP 原始子包分节越界</value>
+  </data>
+  <data name="RSGPPacketInfoRegionOutOfRange" xml:space="preserve">
+    <value>RSGP 子包信息区越界</value>
+  </data>
+  <data name="RSGPPacketSectionOutOfRange" xml:space="preserve">
+    <value>RSGP 子包分节越界</value>
+  </data>
+  <data name="RSGPPacketHeaderIncomplete" xml:space="preserve">
+    <value>RSGP 子包头不完整</value>
+  </data>
+  <data name="RTONEncryptionFailed" xml:space="preserve">
+    <value>RTON 加密失败</value>
+  </data>
+  <data name="RTONEncodingFailed" xml:space="preserve">
+    <value>RTON 编码失败</value>
+  </data>
+  <data name="RTONDecryptionFailed" xml:space="preserve">
+    <value>RTON 解密失败</value>
+  </data>
+  <data name="RTONDecodingFailed" xml:space="preserve">
+    <value>RTON 解码失败</value>
+  </data>
+  <data name="ReanimJSONContentEmpty" xml:space="preserve">
+    <value>Reanim JSON 内容为空</value>
+  </data>
+  <data name="ReanimTransformIncomplete" xml:space="preserve">
+    <value>Reanim 变换不完整</value>
+  </data>
+  <data name="ReanimTransformComponentIncomplete" xml:space="preserve">
+    <value>Reanim 变换分量不完整</value>
+  </data>
+  <data name="ReanimTransformComponentAttributeInvalid" xml:space="preserve">
+    <value>Reanim 变换分量属性无效</value>
+  </data>
+  <data name="ReanimTransformComponentMustObject" xml:space="preserve">
+    <value>Reanim 变换分量必须是对象</value>
+  </data>
+  <data name="ReanimTransformAttributeInvalid" xml:space="preserve">
+    <value>Reanim 变换属性无效</value>
+  </data>
+  <data name="ReanimTransformMustObject" xml:space="preserve">
+    <value>Reanim 变换必须是对象</value>
+  </data>
+  <data name="ReanimDataLengthMismatch" xml:space="preserve">
+    <value>Reanim 数据长度不匹配</value>
+  </data>
+  <data name="RsbPatchOnlySupportsRSBVersion0CurrentFile" xml:space="preserve">
+    <value>RsbPatch 仅支持 RSB 版本 {0}，当前文件为版本 {1}</value>
+  </data>
+  <data name="RsbPatchNameExceeds0Bytes1" xml:space="preserve">
+    <value>RsbPatch 名称超出 {0} 字节：{1}</value>
+  </data>
+  <data name="RsbPatchDataIncompleteExpected0Bytes1Remaining" xml:space="preserve">
+    <value>RsbPatch 数据不完整：需要 {0} 字节，剩余 {1}</value>
+  </data>
+  <data name="SMPLChunkLoopCountInvalid" xml:space="preserve">
+    <value>SMPL 分块循环次数无效</value>
+  </data>
+  <data name="SNRDataChunkInvalid" xml:space="preserve">
+    <value>SNR 数据分块无效</value>
+  </data>
+  <data name="SNRFileHeaderTruncated" xml:space="preserve">
+    <value>SNR 文件头被截断</value>
+  </data>
+  <data name="SNREncodingMismatch" xml:space="preserve">
+    <value>SNR 编码不匹配</value>
+  </data>
+  <data name="SNRInputHasNoSampleData" xml:space="preserve">
+    <value>SNR 输入没有采样数据</value>
+  </data>
+  <data name="SNRInputOutOfFormatRange" xml:space="preserve">
+    <value>SNR 输入超出格式范围</value>
+  </data>
+  <data name="SNRChannelCountInvalid" xml:space="preserve">
+    <value>SNR 通道数无效</value>
+  </data>
+  <data name="SPSChunkIdentifierMismatch" xml:space="preserve">
+    <value>SPS 分块标识不匹配</value>
+  </data>
+  <data name="SPSDataChunkInvalid" xml:space="preserve">
+    <value>SPS 数据分块无效</value>
+  </data>
+  <data name="SPSDataChunkTruncated" xml:space="preserve">
+    <value>SPS 数据分块被截断</value>
+  </data>
+  <data name="SPSFileHeaderTruncated" xml:space="preserve">
+    <value>SPS 文件头被截断</value>
+  </data>
+  <data name="SPSInputHasNoSampleData" xml:space="preserve">
+    <value>SPS 输入没有采样数据</value>
+  </data>
+  <data name="SPSInputOutOfFormatRange" xml:space="preserve">
+    <value>SPS 输入超出格式范围</value>
+  </data>
+  <data name="SPSChannelCountInvalid" xml:space="preserve">
+    <value>SPS 通道数无效</value>
+  </data>
+  <data name="TrailJSONContentEmpty" xml:space="preserve">
+    <value>Trail JSON 内容为空</value>
+  </data>
+  <data name="TrailDataLengthMismatch" xml:space="preserve">
+    <value>Trail 数据长度不匹配</value>
+  </data>
+  <data name="VCDiffVariableLengthIntegerCannotNegative" xml:space="preserve">
+    <value>VCDiff 变长整数不能为负数</value>
+  </data>
+  <data name="VCDiffCodeTableLacksUsableOpcodes" xml:space="preserve">
+    <value>VCDiff 码表缺少可用的操作码</value>
+  </data>
+  <data name="VCDiffWindowLengthDoesNotMatchActualOutput" xml:space="preserve">
+    <value>VCDiff 窗口长度与实际输出不一致</value>
+  </data>
+  <data name="VCDiffDecodingFailed0" xml:space="preserve">
+    <value>VCDiff 解码失败：{0}</value>
+  </data>
+  <data name="VORBChunkSizeInvalid" xml:space="preserve">
+    <value>VORB 分块大小无效</value>
+  </data>
+  <data name="VarIntValueTooLarge" xml:space="preserve">
+    <value>VarInt 数值过大</value>
+  </data>
+  <data name="WAVChunkTruncated" xml:space="preserve">
+    <value>WAV 分块被截断</value>
+  </data>
+  <data name="WAVFileLacksFmtOrDataChunk" xml:space="preserve">
+    <value>WAV 缺少 fmt 或 data 分块</value>
+  </data>
+  <data name="WPParticleFileInfoInvalid" xml:space="preserve">
+    <value>WP 粒子文件信息无效</value>
+  </data>
+  <data name="WPParticleFileHeaderInvalid" xml:space="preserve">
+    <value>WP 粒子文件头无效</value>
+  </data>
+  <data name="XASDataTruncated" xml:space="preserve">
+    <value>XAS 数据被截断</value>
+  </data>
+  <data name="XASDataLengthDoesNotMatchEAACSample" xml:space="preserve">
+    <value>XAS 数据长度与 EAAC 采样数不匹配</value>
+  </data>
+  <data name="XFLExtraJsonContentEmpty" xml:space="preserve">
+    <value>XFL extra.json 内容为空</value>
+  </data>
+  <data name="XFLResolutionMustGreaterThan00" xml:space="preserve">
+    <value>XFL 分辨率必须大于 0，当前为 {0}</value>
+  </data>
+  <data name="XFLFileContentEmpty0" xml:space="preserve">
+    <value>XFL 文件内容为空：{0}</value>
+  </data>
+  <data name="XFLDocumentLacksTimeline" xml:space="preserve">
+    <value>XFL 文档缺少时间轴</value>
+  </data>
+  <data name="XMDataEmpty" xml:space="preserve">
+    <value>XM 数据为空</value>
+  </data>
+  <data name="XMModuleStructureInconsistent" xml:space="preserve">
+    <value>XM 模块结构不一致</value>
+  </data>
+  <data name="XMAChunkTruncated" xml:space="preserve">
+    <value>XMA 分块被截断</value>
+  </data>
+  <data name="XMAFileLacksFmtOrDataChunk" xml:space="preserve">
+    <value>XMA 缺少 fmt 或 data 分块</value>
+  </data>
+  <data name="XMA2EncodingFailed" xml:space="preserve">
+    <value>XMA2 编码失败</value>
+  </data>
+  <data name="XMA2DecodingFailed" xml:space="preserve">
+    <value>XMA2 解码失败</value>
+  </data>
+  <data name="XMLContentInvalid" xml:space="preserve">
+    <value>XML 内容无效</value>
+  </data>
+  <data name="XMemCompressionOnlySupportsHostPAKVersion" xml:space="preserve">
+    <value>XMem 压缩仅支持主机版本 PAK</value>
+  </data>
+  <data name="XNBPrimaryObjectNotFont0" xml:space="preserve">
+    <value>XNB 主对象不是字体：{0}</value>
+  </data>
+  <data name="XNBPrimaryObjectNotSoundEffect0" xml:space="preserve">
+    <value>XNB 主对象不是音效：{0}</value>
+  </data>
+  <data name="XNBPrimaryObjectTypeIndexInvalid0" xml:space="preserve">
+    <value>XNB 主对象类型索引无效：{0}</value>
+  </data>
+  <data name="XNBFontJSONContentEmpty" xml:space="preserve">
+    <value>XNB 字体 JSON 内容为空</value>
+  </data>
+  <data name="XNBFontListLengthInvalid0" xml:space="preserve">
+    <value>XNB 字体列表长度无效：{0}</value>
+  </data>
+  <data name="XNBFontTextureObjectTypeMismatch" xml:space="preserve">
+    <value>XNB 字体纹理对象类型不匹配</value>
+  </data>
+  <data name="XNBFontTextureLayoutInvalid0X1" xml:space="preserve">
+    <value>XNB 字体纹理布局无效：{0}x{1}，{2} 级 mip</value>
+  </data>
+  <data name="XNBFontTextureDataLengthInvalid0" xml:space="preserve">
+    <value>XNB 字体纹理数据长度无效：{0}</value>
+  </data>
+  <data name="XNBTypeReaderCountInvalid0" xml:space="preserve">
+    <value>XNB 类型读取器数量无效：{0}</value>
+  </data>
+  <data name="XPRNameOffsetOutOfRange0" xml:space="preserve">
+    <value>XPR 名称偏移越界：{0}</value>
+  </data>
+  <data name="XPRNameNotZeroTerminated" xml:space="preserve">
+    <value>XPR 名称未以 0 结尾</value>
+  </data>
+  <data name="XPRNamePoolOffsetOutOfRange" xml:space="preserve">
+    <value>XPR 名称池偏移越界</value>
+  </data>
+  <data name="XPRDataRegionLengthInvalid" xml:space="preserve">
+    <value>XPR 数据区长度无效</value>
+  </data>
+  <data name="XPRFileMarkerMismatchExpectedXPR2Got0x" xml:space="preserve">
+    <value>XPR 文件标记不匹配：期望 XPR2，实际 0x{0:X8}</value>
+  </data>
+  <data name="XPRFileLengthInsufficient" xml:space="preserve">
+    <value>XPR 文件长度不足</value>
+  </data>
+  <data name="XPREntry0BeyondDataRegion" xml:space="preserve">
+    <value>XPR 条目 {0} 超出数据区</value>
+  </data>
+  <data name="XPRIndexCountInvalid" xml:space="preserve">
+    <value>XPR 索引数量无效</value>
+  </data>
+  <data name="DOMDocumentXmlMissingFromZIPXFLArchive" xml:space="preserve">
+    <value>ZIP-XFL 归档中缺少 DOMDocument.xml</value>
+  </data>
+  <data name="ZlibDecompressedDataLengthDoesNotMatchExpectation" xml:space="preserve">
+    <value>Zlib 解压数据长度与预期不符</value>
+  </data>
+  <data name="AnimationTimelineMustContainFlowCommandAndSprite" xml:space="preserve">
+    <value>animation 时间轴必须包含 flow、command、sprite 三个图层</value>
+  </data>
+  <data name="AtlasimagemapDatFixedMarkerInvalid" xml:space="preserve">
+    <value>atlasimagemap.dat 固定标记无效</value>
+  </data>
+  <data name="AtlasimagemapDatEntryCountInvalid" xml:space="preserve">
+    <value>atlasimagemap.dat 条目数量无效</value>
+  </data>
+  <data name="AtlasimagemapDatRequiresAtlasName" xml:space="preserve">
+    <value>atlasimagemap.dat 需要图集名称</value>
+  </data>
+  <data name="CommandLayer" xml:space="preserve">
+    <value>command 图层</value>
+  </data>
+  <data name="CommandLayerFrame0" xml:space="preserve">
+    <value>command 图层第 {0} 帧</value>
+  </data>
+  <data name="CommandLayerFrame0ContainsUnparsableCommand1" xml:space="preserve">
+    <value>command 图层第 {0} 帧包含无法解析的命令：{1}</value>
+  </data>
+  <data name="DataChunkInvalid" xml:space="preserve">
+    <value>data 分块无效</value>
+  </data>
+  <data name="XprDataOffsetInDefinitionJsonInvalid" xml:space="preserve">
+    <value>definition.json 中的 XprDataOffset 无效</value>
+  </data>
+  <data name="DescChunkLengthInvalid" xml:space="preserve">
+    <value>desc 分块长度无效</value>
+  </data>
+  <data name="FlowLayer" xml:space="preserve">
+    <value>flow 图层</value>
+  </data>
+  <data name="FlowLayerFrame0" xml:space="preserve">
+    <value>flow 图层第 {0} 帧</value>
+  </data>
+  <data name="LabelTypeOfFlowLayerFrame0MustName" xml:space="preserve">
+    <value>flow 图层第 {0} 帧的 labelType 必须是 name</value>
+  </data>
+  <data name="ScriptOfFlowLayerFrame0MustStop" xml:space="preserve">
+    <value>flow 图层第 {0} 帧的脚本必须是 stop();</value>
+  </data>
+  <data name="FlowCommandLayer" xml:space="preserve">
+    <value>flow/command 图层</value>
+  </data>
+  <data name="Ima4PacketTruncated" xml:space="preserve">
+    <value>ima4 包被截断</value>
+  </data>
+  <data name="PaktPacketSizeDoesNotMatchDataLength" xml:space="preserve">
+    <value>pakt 包大小与数据长度不匹配</value>
+  </data>
+  <data name="PaktPacketSizeInvalid" xml:space="preserve">
+    <value>pakt 包大小无效</value>
+  </data>
+  <data name="PlistTextureRectInvalid0" xml:space="preserve">
+    <value>plist textureRect 无效：{0}</value>
+  </data>
+  <data name="PlistEntryLacksTextureRect0" xml:space="preserve">
+    <value>plist 条目缺少 textureRect：{0}</value>
+  </data>
+  <data name="PlistStructureInvalid" xml:space="preserve">
+    <value>plist 结构无效</value>
+  </data>
+  <data name="ReservedHeader32MustContain8Values" xml:space="preserve">
+    <value>reserved_header_32 必须包含 8 个值</value>
+  </data>
+  <data name="ResourcePathCannotEmpty" xml:space="preserve">
+    <value>resource.path 不能为空</value>
+  </data>
+  <data name="N0NotValidInteger" xml:space="preserve">
+    <value>{0} 不是有效整数</value>
+  </data>
+  <data name="N0ContentEmpty" xml:space="preserve">
+    <value>{0} 内容为空</value>
+  </data>
+  <data name="N0ContentInvalid" xml:space="preserve">
+    <value>{0} 内容无效</value>
+  </data>
+  <data name="N0InvalidAtOffset12" xml:space="preserve">
+    <value>{0} 在偏移 {1} 处无效: {2}</value>
+  </data>
+  <data name="N0TruncatedAtOffset1Need2Bytes" xml:space="preserve">
+    <value>{0} 在偏移 {1} 处被截断: 需要 {2} 字节, 剩余 {3} 字节</value>
+  </data>
+  <data name="N0ChangedItsInstanceTypeAtFrame1" xml:space="preserve">
+    <value>{0} 在第 {1} 帧更换了实例类型</value>
+  </data>
+  <data name="N0StringContainsCharactersThatCannotEncoded" xml:space="preserve">
+    <value>{0} 字符串包含无法编码的字符</value>
+  </data>
+  <data name="N0Must32BitSignedInteger" xml:space="preserve">
+    <value>{0} 必须是 32 位有符号整数</value>
+  </data>
+  <data name="N0MustPrintableASCIIText" xml:space="preserve">
+    <value>{0} 必须是 ASCII 可打印文本</value>
+  </data>
+  <data name="N0MustString" xml:space="preserve">
+    <value>{0} 必须是字符串</value>
+  </data>
+  <data name="N0MustObject" xml:space="preserve">
+    <value>{0} 必须是对象</value>
+  </data>
+  <data name="N0MustArray" xml:space="preserve">
+    <value>{0} 必须是数组</value>
+  </data>
+  <data name="N0MustASCIIStringNoLongerThan65535" xml:space="preserve">
+    <value>{0} 必须是长度不超过 65535 的 ASCII 字符串</value>
+  </data>
+  <data name="N0Invalid" xml:space="preserve">
+    <value>{0} 无效</value>
+  </data>
+  <data name="N0DoesNotReference1" xml:space="preserve">
+    <value>{0} 未引用 {1}</value>
+  </data>
+  <data name="NameAttributeOf0InconsistentWithExtraJson" xml:space="preserve">
+    <value>{0} 的 name 属性与 extra.json 不一致</value>
+  </data>
+  <data name="NameAttributeOf0Should1" xml:space="preserve">
+    <value>{0} 的 name 属性应为 {1}</value>
+  </data>
+  <data name="N1AttributeOf0NotValidInteger" xml:space="preserve">
+    <value>{0} 的 {1} 属性不是有效整数</value>
+  </data>
+  <data name="Layer1Of0" xml:space="preserve">
+    <value>{0} 的图层 {1}</value>
+  </data>
+  <data name="Instance1Of0NotValidImageOr" xml:space="preserve">
+    <value>{0} 的实例 {1} 不是合法的图像或精灵引用</value>
+  </data>
+  <data name="RootNodeOf0MustDOMSymbolItem" xml:space="preserve">
+    <value>{0} 的根节点必须是 DOMSymbolItem</value>
+  </data>
+  <data name="ScriptOf0MustCDATAText" xml:space="preserve">
+    <value>{0} 的脚本必须是 CDATA 文本</value>
+  </data>
+  <data name="N0Lacks1Node" xml:space="preserve">
+    <value>{0} 缺少 {1} 节点</value>
+  </data>
+  <data name="N0LacksContent" xml:space="preserve">
+    <value>{0} 缺少内容</value>
+  </data>
+  <data name="N0ExceedsLimitRequested1Maximum2" xml:space="preserve">
+    <value>{0} 超出限制: 请求 {1}, 上限 {2}</value>
+  </data>
+  <data name="PaddedLPCMSamplesAreNotSupported" xml:space="preserve">
+    <value>不支持带填充的 LPCM 采样</value>
+  </data>
+  <data name="UnsupportedAACSampleRate0" xml:space="preserve">
+    <value>不支持的 AAC 采样率 {0}</value>
+  </data>
+  <data name="UnsupportedCAFVersion" xml:space="preserve">
+    <value>不支持的 CAF 版本</value>
+  </data>
+  <data name="UnsupportedCAFAudioFormat0" xml:space="preserve">
+    <value>不支持的 CAF 音频格式“{0}”</value>
+  </data>
+  <data name="UnsupportedCFU2Version" xml:space="preserve">
+    <value>不支持的 CFU2 版本</value>
+  </data>
+  <data name="UnsupportedDzVersion" xml:space="preserve">
+    <value>不支持的 Dz 版本</value>
+  </data>
+  <data name="UnsupportedEAACChannelCount" xml:space="preserve">
+    <value>不支持的 EAAC 通道数</value>
+  </data>
+  <data name="UnsupportedEALayer3PCMPatchLayout" xml:space="preserve">
+    <value>不支持的 EALayer3 PCM 补丁布局</value>
+  </data>
+  <data name="UnsupportedLPCMPacketLayout" xml:space="preserve">
+    <value>不支持的 LPCM 包布局</value>
+  </data>
+  <data name="UnsupportedLPCMIntegerBitDepth" xml:space="preserve">
+    <value>不支持的 LPCM 整型位深</value>
+  </data>
+  <data name="UnsupportedLPCMFloatingPointBitDepth" xml:space="preserve">
+    <value>不支持的 LPCM 浮点位深</value>
+  </data>
+  <data name="UnsupportedPAMVersion0" xml:space="preserve">
+    <value>不支持的 PAM 版本 {0}</value>
+  </data>
+  <data name="UnsupportedPAXVersion" xml:space="preserve">
+    <value>不支持的 PAX 版本</value>
+  </data>
+  <data name="UnsupportedPCMBitDepth0" xml:space="preserve">
+    <value>不支持的 PCM 位深：{0}</value>
+  </data>
+  <data name="UnsupportedPOPFXVersionVariant0" xml:space="preserve">
+    <value>不支持的 POPFX 版本变体 {0}</value>
+  </data>
+  <data name="UnsupportedPOPFXVersion0" xml:space="preserve">
+    <value>不支持的 POPFX 版本号 {0}</value>
+  </data>
+  <data name="UnsupportedPPFVersion0" xml:space="preserve">
+    <value>不支持的 PPF 版本 {0}</value>
+  </data>
+  <data name="UnsupportedRSBPacketRecordSize0" xml:space="preserve">
+    <value>不支持的 RSB 子包记录大小：{0}</value>
+  </data>
+  <data name="UnsupportedSPSEncoding0" xml:space="preserve">
+    <value>不支持的 SPS 编码 {0}</value>
+  </data>
+  <data name="UnsupportedWMACodec" xml:space="preserve">
+    <value>不支持的 WMA 编解码器</value>
+  </data>
+  <data name="UnsupportedXNBVersion0" xml:space="preserve">
+    <value>不支持的 XNB 版本：{0}</value>
+  </data>
+  <data name="UnsupportedIma4PacketLayout" xml:space="preserve">
+    <value>不支持的 ima4 包布局</value>
+  </data>
+  <data name="UnsupportedBitWidth0" xml:space="preserve">
+    <value>不支持的位宽 {0}</value>
+  </data>
+  <data name="UnsupportedHashAlgorithm0" xml:space="preserve">
+    <value>不支持的哈希算法：{0}</value>
+  </data>
+  <data name="UnsupportedCharacterSetUTF16" xml:space="preserve">
+    <value>不支持的字符集 UTF-16</value>
+  </data>
+  <data name="UnsupportedFloatingPointBitDepth0" xml:space="preserve">
+    <value>不支持的浮点位深：{0}</value>
+  </data>
+  <data name="UnsupportedPatchVersion0" xml:space="preserve">
+    <value>不支持的补丁版本号：{0}</value>
+  </data>
+  <data name="UnsupportedChannelCount" xml:space="preserve">
+    <value>不支持的通道数</value>
+  </data>
+  <data name="UnsupportedAudioFormat0x0X4" xml:space="preserve">
+    <value>不支持的音频格式：0x{0:X4}</value>
+  </data>
+  <data name="NonInterleavedLPCMCAFNotSupported" xml:space="preserve">
+    <value>不支持非交错 LPCM CAF</value>
+  </data>
+  <data name="NotSupportedFontWidgetDATFile" xml:space="preserve">
+    <value>不是受支持的 FontWidget DAT 文件</value>
+  </data>
+  <data name="NotSupportedWEMFile" xml:space="preserve">
+    <value>不是受支持的 WEM 文件</value>
+  </data>
+  <data name="NotSupportedXMModule" xml:space="preserve">
+    <value>不是受支持的 XM 模块</value>
+  </data>
+  <data name="NotValidDzFile" xml:space="preserve">
+    <value>不是有效的 Dz 文件</value>
+  </data>
+  <data name="NotValidRSBFile" xml:space="preserve">
+    <value>不是有效的 RSB 文件</value>
+  </data>
+  <data name="NotValidRSGPPacket" xml:space="preserve">
+    <value>不是有效的 RSGP 子包</value>
+  </data>
+  <data name="NotValidRsbPatchFile" xml:space="preserve">
+    <value>不是有效的 RsbPatch 文件</value>
+  </data>
+  <data name="NotValidXNBFile" xml:space="preserve">
+    <value>不是有效的 XNB 文件</value>
+  </data>
+  <data name="MainSpriteSymbol" xml:space="preserve">
+    <value>主精灵符号</value>
+  </data>
+  <data name="BitField" xml:space="preserve">
+    <value>位域</value>
+  </data>
+  <data name="BitFieldParametersMustAppearInPairs" xml:space="preserve">
+    <value>位域参数必须成对出现</value>
+  </data>
+  <data name="BitFieldOutOfRangeOffset0Count" xml:space="preserve">
+    <value>位域越界: offset={0} count={1}</value>
+  </data>
+  <data name="PositionOutOfRange01" xml:space="preserve">
+    <value>位置越界：{0}/{1}</value>
+  </data>
+  <data name="ReservedBitsAreNonZero0x0X" xml:space="preserve">
+    <value>保留位非零 0x{0:X}</value>
+  </data>
+  <data name="InnerException" xml:space="preserve">
+    <value>内部异常:</value>
+  </data>
+  <data name="ChunkHeaderTruncated" xml:space="preserve">
+    <value>分块头被截断</value>
+  </data>
+  <data name="ChunkExceedsFileSize" xml:space="preserve">
+    <value>分块超出文件大小</value>
+  </data>
+  <data name="ChunkTooLarge" xml:space="preserve">
+    <value>分块过大</value>
+  </data>
+  <data name="ListLengthInvalid" xml:space="preserve">
+    <value>列表长度无效</value>
+  </data>
+  <data name="ErrorCreatingOGGFile" xml:space="preserve">
+    <value>创建 OGG 文件时出错</value>
+  </data>
+  <data name="ErrorCreatingFileHeader" xml:space="preserve">
+    <value>创建文件头时出错</value>
+  </data>
+  <data name="TooManyPackets" xml:space="preserve">
+    <value>包数量过多</value>
+  </data>
+  <data name="CompressedDataDoesNotContainCompletePacket" xml:space="preserve">
+    <value>压缩数据不包含完整包</value>
+  </data>
+  <data name="OriginalPacketDoesNotMatchPatch0" xml:space="preserve">
+    <value>变动前子包与补丁不匹配：{0}</value>
+  </data>
+  <data name="OriginalFileDoesNotMatchPatch" xml:space="preserve">
+    <value>变动前文件与补丁不匹配</value>
+  </data>
+  <data name="TransformCountInvalid0" xml:space="preserve">
+    <value>变换数量无效：{0}</value>
+  </data>
+  <data name="VariableLengthCompressedCAFRequiresPaktChunk" xml:space="preserve">
+    <value>变长压缩 CAF 需要 pakt 分块</value>
+  </data>
+  <data name="ImageTransformNotPureRotationMatrixAndCannot" xml:space="preserve">
+    <value>图像变换不是纯旋转矩阵，无法写入低于 2 的 PAM 版本</value>
+  </data>
+  <data name="ImageTransformDeviatesTooMuchFromRotationMatrix" xml:space="preserve">
+    <value>图像变换与旋转矩阵的误差过大</value>
+  </data>
+  <data name="ImageReferenceCannotNull" xml:space="preserve">
+    <value>图像引用不能为 null</value>
+  </data>
+  <data name="ImageReferenceMustStringOrNumber" xml:space="preserve">
+    <value>图像引用必须是字符串或数字</value>
+  </data>
+  <data name="ImageDoesNotFitIntoSpecifiedAtlasSize" xml:space="preserve">
+    <value>图像无法放入指定的图集尺寸：{0}</value>
+  </data>
+  <data name="ImageSymbol0" xml:space="preserve">
+    <value>图像符号 {0}</value>
+  </data>
+  <data name="ImageDecodingFailed0" xml:space="preserve">
+    <value>图像解码失败：{0}</value>
+  </data>
+  <data name="ImageReadingFailed" xml:space="preserve">
+    <value>图像读取失败</value>
+  </data>
+  <data name="LayerOffset" xml:space="preserve">
+    <value>图层偏移</value>
+  </data>
+  <data name="LayerEmitter" xml:space="preserve">
+    <value>图层发射器</value>
+  </data>
+  <data name="LayerEmitterState" xml:space="preserve">
+    <value>图层发射器状态</value>
+  </data>
+  <data name="LayerName" xml:space="preserve">
+    <value>图层名称</value>
+  </data>
+  <data name="LayerImageName" xml:space="preserve">
+    <value>图层图像名称</value>
+  </data>
+  <data name="LayerCountExceedsLimit" xml:space="preserve">
+    <value>图层数量超出上限</value>
+  </data>
+  <data name="LayerUnknownData3" xml:space="preserve">
+    <value>图层未知数据 3</value>
+  </data>
+  <data name="LayerUnknownData4" xml:space="preserve">
+    <value>图层未知数据 4</value>
+  </data>
+  <data name="LayerUnknownData5" xml:space="preserve">
+    <value>图层未知数据 5</value>
+  </data>
+  <data name="LayerHasNoGlyphSlots" xml:space="preserve">
+    <value>图层没有字形槽位</value>
+  </data>
+  <data name="LayerSourceLength" xml:space="preserve">
+    <value>图层源长度</value>
+  </data>
+  <data name="LayerState" xml:space="preserve">
+    <value>图层状态</value>
+  </data>
+  <data name="LayerFootageId" xml:space="preserve">
+    <value>图层素材编号</value>
+  </data>
+  <data name="LayerStartFrame" xml:space="preserve">
+    <value>图层起始帧</value>
+  </data>
+  <data name="LayerDuration" xml:space="preserve">
+    <value>图层长度</value>
+  </data>
+  <data name="TotalPatternDataExceedsLimit" xml:space="preserve">
+    <value>图案数据总量超限</value>
+  </data>
+  <data name="PatternRowCountExceedsLimit" xml:space="preserve">
+    <value>图案行数超限</value>
+  </data>
+  <data name="AtlasContainsNoSubImages" xml:space="preserve">
+    <value>图集不包含任何子图</value>
+  </data>
+  <data name="AtlasDimensionsMustPositive" xml:space="preserve">
+    <value>图集尺寸必须为正数</value>
+  </data>
+  <data name="ErrorCopyingCodebook" xml:space="preserve">
+    <value>复制码本时出错</value>
+  </data>
+  <data name="CompositeGroupContainsResources" xml:space="preserve">
+    <value>复合群组包含资源</value>
+  </data>
+  <data name="SubImageExceedsAtlasBounds0" xml:space="preserve">
+    <value>子图超出图集范围：{0}</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>字符串</value>
+  </data>
+  <data name="StringLacksTerminator" xml:space="preserve">
+    <value>字符串缺少结束符</value>
+  </data>
+  <data name="StringLengthInvalid" xml:space="preserve">
+    <value>字符串长度无效</value>
+  </data>
+  <data name="KerningPairCountExceedsLimit" xml:space="preserve">
+    <value>字距对数量超出上限</value>
+  </data>
+  <data name="BooleanIntegerInvalid" xml:space="preserve">
+    <value>布尔值整数无效</value>
+  </data>
+  <data name="Constant" xml:space="preserve">
+    <value>常量</value>
+  </data>
+  <data name="ConstantBitsMismatch" xml:space="preserve">
+    <value>常量位不匹配</value>
+  </data>
+  <data name="ExceptionStack" xml:space="preserve">
+    <value>异常堆栈:</value>
+  </data>
+  <data name="ArchiveIndexOutOfRange0" xml:space="preserve">
+    <value>归档索引越界：{0}</value>
+  </data>
+  <data name="LoopRangeExceedsLimit" xml:space="preserve">
+    <value>循环范围超出限制</value>
+  </data>
+  <data name="XFLPathMustSpecified" xml:space="preserve">
+    <value>必须指定 XFL 路径</value>
+  </data>
+  <data name="ZIPXFLPathMustSpecified" xml:space="preserve">
+    <value>必须指定 ZIP-XFL 路径</value>
+  </data>
+  <data name="PackedCodebookUnavailable" xml:space="preserve">
+    <value>打包码本不可用</value>
+  </data>
+  <data name="PackedCodebookFileInvalid" xml:space="preserve">
+    <value>打包码本文件无效</value>
+  </data>
+  <data name="XFLFileNotFound0" xml:space="preserve">
+    <value>找不到 XFL 文件：{0}</value>
+  </data>
+  <data name="XFLManifestFileNotFound0" xml:space="preserve">
+    <value>找不到 XFL 说明文件：{0}</value>
+  </data>
+  <data name="XPRResourceNotFound0" xml:space="preserve">
+    <value>找不到 XPR 资源：{0}</value>
+  </data>
+  <data name="N0NotFound1" xml:space="preserve">
+    <value>找不到 {0}：{1}</value>
+  </data>
+  <data name="BuiltInCodebookNotFound0" xml:space="preserve">
+    <value>找不到内置码本 {0}</value>
+  </data>
+  <data name="ResourceDirectoryNotFound0" xml:space="preserve">
+    <value>找不到资源目录：{0}</value>
+  </data>
+  <data name="InputDirectoryNotFound0" xml:space="preserve">
+    <value>找不到输入目录：{0}</value>
+  </data>
+  <data name="TechniqueAnnotation" xml:space="preserve">
+    <value>技术注解</value>
+  </data>
+  <data name="TechniquePass" xml:space="preserve">
+    <value>技术通道</value>
+  </data>
+  <data name="PacketTooLarge" xml:space="preserve">
+    <value>数据包过大</value>
+  </data>
+  <data name="DataOutOfRangeOffset0Length1" xml:space="preserve">
+    <value>数据越界：偏移 {0} 长度 {1} 超出 {2} 字节</value>
+  </data>
+  <data name="DataTooLarge0BytesExceedsMemoryLimit" xml:space="preserve">
+    <value>数据过大：{0} 字节超出内存上限</value>
+  </data>
+  <data name="DataLengthInsufficient" xml:space="preserve">
+    <value>数据长度不足</value>
+  </data>
+  <data name="InsufficientDataLengthOffset0Requires1Bytes" xml:space="preserve">
+    <value>数据长度不足：偏移 {0} 需要 {1} 字节，剩余 {2} 字节</value>
+  </data>
+  <data name="FileDoesNotExist0" xml:space="preserve">
+    <value>文件不存在：{0}</value>
+  </data>
+  <data name="FileTrailerIncomplete" xml:space="preserve">
+    <value>文件尾部不完整</value>
+  </data>
+  <data name="ExtraDataExistsAfterEndOfFile" xml:space="preserve">
+    <value>文件尾部之后存在多余数据</value>
+  </data>
+  <data name="FileTrailerMarkerInvalid" xml:space="preserve">
+    <value>文件尾部标记无效</value>
+  </data>
+  <data name="FileTooLarge0" xml:space="preserve">
+    <value>文件过大：{0}</value>
+  </data>
+  <data name="FileLengthInsufficient" xml:space="preserve">
+    <value>文件长度不足</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="InvalidPAX0" xml:space="preserve">
+    <value>无效的 PAX {0}</value>
+  </data>
+  <data name="InvalidPAX0Transform" xml:space="preserve">
+    <value>无效的 PAX {0} 变换</value>
+  </data>
+  <data name="InvalidPAX0LoopType1" xml:space="preserve">
+    <value>无效的 PAX {0} 循环类型 {1}</value>
+  </data>
+  <data name="InvalidPAX0StaticFrameCount" xml:space="preserve">
+    <value>无效的 PAX {0} 静态帧数量</value>
+  </data>
+  <data name="InvalidPAXLayerSourceLength" xml:space="preserve">
+    <value>无效的 PAX 图层源长度</value>
+  </data>
+  <data name="InvalidPAXLayerType" xml:space="preserve">
+    <value>无效的 PAX 图层类型</value>
+  </data>
+  <data name="InvalidPakCompressionMethod0" xml:space="preserve">
+    <value>无效的 Pak 压缩方式：{0}</value>
+  </data>
+  <data name="Invalid0" xml:space="preserve">
+    <value>无效的 {0}</value>
+  </data>
+  <data name="Invalid01" xml:space="preserve">
+    <value>无效的 {0}：{1}</value>
+  </data>
+  <data name="InvalidEmitterType0" xml:space="preserve">
+    <value>无效的发射器类型：{0}</value>
+  </data>
+  <data name="InvalidFieldType0" xml:space="preserve">
+    <value>无效的场类型：{0}</value>
+  </data>
+  <data name="InvalidDataLength0" xml:space="preserve">
+    <value>无效的数据长度：{0}</value>
+  </data>
+  <data name="InvalidCurveType0" xml:space="preserve">
+    <value>无效的曲线类型：{0}</value>
+  </data>
+  <data name="InvalidParticleCurve0" xml:space="preserve">
+    <value>无效的粒子曲线：{0}</value>
+  </data>
+  <data name="CannotInsertEmptyPatternForInvalidPattern" xml:space="preserve">
+    <value>无法为无效图案插入空图案</value>
+  </data>
+  <data name="CannotCreateImageDecoder0" xml:space="preserve">
+    <value>无法创建图像解码器：{0}</value>
+  </data>
+  <data name="CannotParsePAKFileTable" xml:space="preserve">
+    <value>无法解析 PAK 文件表</value>
+  </data>
+  <data name="UnrecognizedReanimData" xml:space="preserve">
+    <value>无法识别的 Reanim 数据</value>
+  </data>
+  <data name="UnrecognizedTrailData" xml:space="preserve">
+    <value>无法识别的 Trail 数据</value>
+  </data>
+  <data name="CannotRead0" xml:space="preserve">
+    <value>无法读取 {0}</value>
+  </data>
+  <data name="Time0YyyyMMDdHHMmSs" xml:space="preserve">
+    <value>时间: {0:yyyy-MM-dd HH:mm:ss.fff}</value>
+  </data>
+  <data name="MappedMemberInvalid" xml:space="preserve">
+    <value>映射成员无效</value>
+  </data>
+  <data name="Terminating0" xml:space="preserve">
+    <value>是否终止: {0}</value>
+  </data>
+  <data name="CompressedXNBFilesAreNotSupportedYet" xml:space="preserve">
+    <value>暂不支持压缩的 XNB 文件</value>
+  </data>
+  <data name="CurveTypeMustStringOrNumber" xml:space="preserve">
+    <value>曲线类型必须是字符串或数字</value>
+  </data>
+  <data name="ExpectedPAXLayerHeader" xml:space="preserve">
+    <value>期望 PAX 图层头</value>
+  </data>
+  <data name="Expected01" xml:space="preserve">
+    <value>期望 {0}, 实际 {1}</value>
+  </data>
+  <data name="IndefiniteLengthOnlyValidForDataChunk" xml:space="preserve">
+    <value>未定长仅对 data 分块有效</value>
+  </data>
+  <data name="DOMDocumentXmlOfXFLProjectNotFound" xml:space="preserve">
+    <value>未找到 XFL 项目的 DOMDocument.xml</value>
+  </data>
+  <data name="ZIPXFLArchiveNotFound" xml:space="preserve">
+    <value>未找到 ZIP-XFL 归档</value>
+  </data>
+  <data name="PlistFramesDictionaryNotFound" xml:space="preserve">
+    <value>未找到 plist frames 字典</value>
+  </data>
+  <data name="N0NodeNotFound" xml:space="preserve">
+    <value>未找到 {0} 节点</value>
+  </data>
+  <data name="AtlasInfoNotFound" xml:space="preserve">
+    <value>未找到图集信息</value>
+  </data>
+  <data name="UnknownPAKFileType0x0X8" xml:space="preserve">
+    <value>未知的 PAK 文件类型：0x{0:X8}</value>
+  </data>
+  <data name="UnknownPAMTransformType" xml:space="preserve">
+    <value>未知的 PAM 变换类型</value>
+  </data>
+  <data name="UnknownPAMTransformType0" xml:space="preserve">
+    <value>未知的 PAM 变换类型 {0}</value>
+  </data>
+  <data name="UnknownPAXTransformMarker0" xml:space="preserve">
+    <value>未知的 PAX 变换标记 {0}</value>
+  </data>
+  <data name="UnknownParticleMarker0" xml:space="preserve">
+    <value>未知的粒子标记：{0}</value>
+  </data>
+  <data name="UnknownGroupType0" xml:space="preserve">
+    <value>未知的群组类型 {0}</value>
+  </data>
+  <data name="UnknownGroupTypeOrdinal0" xml:space="preserve">
+    <value>未知的群组类型序号 {0}</value>
+  </data>
+  <data name="UnknownResourceType0" xml:space="preserve">
+    <value>未知的资源类型 {0}</value>
+  </data>
+  <data name="UnknownResourceTypeOrdinal0" xml:space="preserve">
+    <value>未知的资源类型序号 {0}</value>
+  </data>
+  <data name="Source0" xml:space="preserve">
+    <value>来源: {0}</value>
+  </data>
+  <data name="FormatMarkerMismatch" xml:space="preserve">
+    <value>格式标记不匹配</value>
+  </data>
+  <data name="FormatMarkerMismatch0x0X8Expected0x" xml:space="preserve">
+    <value>格式标记不匹配：0x{0:X8}，应为 0x{1:X8}</value>
+  </data>
+  <data name="ModuleInstrumentCountExceedsLimit" xml:space="preserve">
+    <value>模块乐器数超限</value>
+  </data>
+  <data name="ModulePatternCountExceedsLimit" xml:space="preserve">
+    <value>模块图案数超限</value>
+  </data>
+  <data name="ModuleHeaderInconsistentWithActualStructure" xml:space="preserve">
+    <value>模块头部与实际结构不一致</value>
+  </data>
+  <data name="ModuleChannelCountExceedsLimit" xml:space="preserve">
+    <value>模块通道数超限</value>
+  </data>
+  <data name="DerivedKeyMaterialInsufficient" xml:space="preserve">
+    <value>派生密钥材料不足</value>
+  </data>
+  <data name="Stream" xml:space="preserve">
+    <value>流</value>
+  </data>
+  <data name="SourceFileInvalid" xml:space="preserve">
+    <value>源文件无效</value>
+  </data>
+  <data name="SourceVersionInvalid" xml:space="preserve">
+    <value>源版本无效</value>
+  </data>
+  <data name="ErrorGeneratingVorbisPackets" xml:space="preserve">
+    <value>生成 Vorbis 包时出错</value>
+  </data>
+  <data name="TargetAlreadyDirectory0" xml:space="preserve">
+    <value>目标已是目录：{0}</value>
+  </data>
+  <data name="TargetVersionInvalid" xml:space="preserve">
+    <value>目标版本无效</value>
+  </data>
+  <data name="ShaderParameter" xml:space="preserve">
+    <value>着色器参数</value>
+  </data>
+  <data name="CodebookSyncModeInvalid" xml:space="preserve">
+    <value>码本同步模式无效</value>
+  </data>
+  <data name="CodebookIndexInvalid" xml:space="preserve">
+    <value>码本索引无效</value>
+  </data>
+  <data name="SimpleGroupContainsSubgroups" xml:space="preserve">
+    <value>简单群组包含子群组</value>
+  </data>
+  <data name="ParticleJSONContentEmpty" xml:space="preserve">
+    <value>粒子 JSON 内容为空</value>
+  </data>
+  <data name="ParticleXMLContentInvalid" xml:space="preserve">
+    <value>粒子 XML 内容无效</value>
+  </data>
+  <data name="ParticleEmitterCountInvalid0" xml:space="preserve">
+    <value>粒子发射器数量无效：{0}</value>
+  </data>
+  <data name="ParticleDefinitionState" xml:space="preserve">
+    <value>粒子定义状态</value>
+  </data>
+  <data name="ParticleFileHeaderInvalid" xml:space="preserve">
+    <value>粒子文件头无效</value>
+  </data>
+  <data name="ParticleCurveMustStringOrNumber" xml:space="preserve">
+    <value>粒子曲线必须是字符串或数字</value>
+  </data>
+  <data name="ParticleMarkerMustArrayOrNumber" xml:space="preserve">
+    <value>粒子标记必须是数组或数字</value>
+  </data>
+  <data name="ParticleMarkerArrayIncomplete" xml:space="preserve">
+    <value>粒子标记数组不完整</value>
+  </data>
+  <data name="ParticleMarkerItemMustStringOrNumber" xml:space="preserve">
+    <value>粒子标记项必须是字符串或数字</value>
+  </data>
+  <data name="ParticleTrackNodeIncomplete" xml:space="preserve">
+    <value>粒子轨道节点不完整</value>
+  </data>
+  <data name="ParticleTrackNodeAttributeInvalid" xml:space="preserve">
+    <value>粒子轨道节点属性无效</value>
+  </data>
+  <data name="ParticleTrackNodeMustObject" xml:space="preserve">
+    <value>粒子轨道节点必须是对象</value>
+  </data>
+  <data name="SpriteSymbol0" xml:space="preserve">
+    <value>精灵符号 {0}</value>
+  </data>
+  <data name="MissingWAVEIdentifier" xml:space="preserve">
+    <value>缺少 WAVE 标识</value>
+  </data>
+  <data name="MissingDescOrDataChunk" xml:space="preserve">
+    <value>缺少 desc 或 data 分块</value>
+  </data>
+  <data name="MissingTerminator" xml:space="preserve">
+    <value>缺少终止符</value>
+  </data>
+  <data name="MissingInputImage0" xml:space="preserve">
+    <value>缺少输入图像：{0}</value>
+  </data>
+  <data name="GroupFixedMarkerInvalid" xml:space="preserve">
+    <value>群组固定标记无效</value>
+  </data>
+  <data name="FreeEmitter" xml:space="preserve">
+    <value>自由发射器</value>
+  </data>
+  <data name="FreeEmitterParticleDefinitionState" xml:space="preserve">
+    <value>自由发射器粒子定义状态</value>
+  </data>
+  <data name="FreeParticleDefinitionState" xml:space="preserve">
+    <value>自由粒子定义状态</value>
+  </data>
+  <data name="PatchPacketNameMismatch0" xml:space="preserve">
+    <value>补丁子包名称不匹配：{0}</value>
+  </data>
+  <data name="PatchPacketCountInconsistentWithRSB" xml:space="preserve">
+    <value>补丁子包数量与 RSB 不一致</value>
+  </data>
+  <data name="InfoRegionLengthRestoredFromPatchInconsistent" xml:space="preserve">
+    <value>补丁还原的信息区长度不一致</value>
+  </data>
+  <data name="SettingValue" xml:space="preserve">
+    <value>设置值</value>
+  </data>
+  <data name="SettingAnnotation" xml:space="preserve">
+    <value>设置注解</value>
+  </data>
+  <data name="EncounteredEndOfFileWhileReadingWEMData" xml:space="preserve">
+    <value>读取 WEM 数据时遇到文件结尾</value>
+  </data>
+  <data name="ErrorReadingFile" xml:space="preserve">
+    <value>读取文件时出错</value>
+  </data>
+  <data name="ResourceFixedMarkerInvalid" xml:space="preserve">
+    <value>资源固定标记无效</value>
+  </data>
+  <data name="ResourceBlockArchiveIndexOutOfRange0" xml:space="preserve">
+    <value>资源块归档索引越界：{0}</value>
+  </data>
+  <data name="ResourceBlockIndexOutOfRange01" xml:space="preserve">
+    <value>资源块索引越界：{0}/{1}</value>
+  </data>
+  <data name="ResourcePathIllegal0" xml:space="preserve">
+    <value>资源路径非法：{0}</value>
+  </data>
+  <data name="TrailNodeIncomplete" xml:space="preserve">
+    <value>轨迹节点不完整</value>
+  </data>
+  <data name="TrailNodeAttributeInvalid" xml:space="preserve">
+    <value>轨迹节点属性无效</value>
+  </data>
+  <data name="TrailNodeMustObject" xml:space="preserve">
+    <value>轨迹节点必须是对象</value>
+  </data>
+  <data name="TrailNodeCountInvalid0" xml:space="preserve">
+    <value>轨迹节点数量无效：{0}</value>
+  </data>
+  <data name="TrackCountInvalid0" xml:space="preserve">
+    <value>轨道数量无效：{0}</value>
+  </data>
+  <data name="InputNotCAFFile" xml:space="preserve">
+    <value>输入不是 CAF 文件</value>
+  </data>
+  <data name="InputNotPAMJSONFile0" xml:space="preserve">
+    <value>输入不是 PAM JSON 文件：{0}</value>
+  </data>
+  <data name="InputNotRIFFWAVEFile" xml:space="preserve">
+    <value>输入不是 RIFF/WAVE 文件</value>
+  </data>
+  <data name="InputNotXFLProjectDirectory0" xml:space="preserve">
+    <value>输入不是 XFL 工程目录：{0}</value>
+  </data>
+  <data name="InputNotXMA2Audio" xml:space="preserve">
+    <value>输入不是 XMA2 音频</value>
+  </data>
+  <data name="InputMust16BitPCMWAV" xml:space="preserve">
+    <value>输入必须是 16 位 PCM WAV</value>
+  </data>
+  <data name="InputDirectoryContainsNoPNGFiles" xml:space="preserve">
+    <value>输入目录中没有 PNG 文件</value>
+  </data>
+  <data name="RuntimeVersion0" xml:space="preserve">
+    <value>运行时版本: {0}</value>
+  </data>
+  <data name="ProcessArchitecture0" xml:space="preserve">
+    <value>进程架构: {0}</value>
+  </data>
+  <data name="ChannelCountInvalid" xml:space="preserve">
+    <value>通道数无效</value>
+  </data>
+  <data name="ChannelAnnotation" xml:space="preserve">
+    <value>通道注解</value>
+  </data>
+  <data name="ChannelSetting" xml:space="preserve">
+    <value>通道设置</value>
+  </data>
+  <data name="TotalSampleDataExceedsLimit" xml:space="preserve">
+    <value>采样数据总量超限</value>
+  </data>
+  <data name="SampleDataExceedsModuleBounds" xml:space="preserve">
+    <value>采样数据超出模块范围</value>
+  </data>
+  <data name="SampleDataLengthDoesNotMatchChannelCount" xml:space="preserve">
+    <value>采样数据长度与通道数不匹配</value>
+  </data>
+  <data name="SampleRateInvalid" xml:space="preserve">
+    <value>采样率无效</value>
+  </data>
+  <data name="SampleIndexOutOfRange" xml:space="preserve">
+    <value>采样索引越界</value>
+  </data>
+  <data name="SampleLengthExceedsLimit" xml:space="preserve">
+    <value>采样长度超限</value>
+  </data>
+  <data name="ErrorRebuildingCodebook" xml:space="preserve">
+    <value>重建码本时出错</value>
+  </data>
+  <data name="Illegal0String" xml:space="preserve">
+    <value>非法 {0} 字符串</value>
+  </data>
+  <data name="SoundEffectFormatHeaderLengthInvalid0" xml:space="preserve">
+    <value>音效格式头长度无效：{0}</value>
+  </data>
+  <data name="SoundEffectSampleDataLengthInvalid0" xml:space="preserve">
+    <value>音效采样数据长度无效：{0}</value>
+  </data>
+  <data name="AudioFormatHeaderTruncated" xml:space="preserve">
+    <value>音频格式头被截断</value>
+  </data>
+  <data name="AudioChannelCountInvalid0" xml:space="preserve">
+    <value>音频通道数无效：{0}</value>
+  </data>
+  <data name="AudioSampleRateInvalid0" xml:space="preserve">
+    <value>音频采样率无效：{0}</value>
+  </data>
+</root>

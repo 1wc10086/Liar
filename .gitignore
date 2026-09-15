@@ -1,0 +1,10 @@
+bin/
+obj/
+artifacts/
+*.apk
+*.aab
+*.user
+*.suo
+.vs/
+.idea/
+.DS_Store

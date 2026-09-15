@@ -1,0 +1,132 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:m3c="using:Material3.Avalonia.Controls"
+             xmlns:icons="using:Material3.Avalonia.Icons"
+             xmlns:vm="using:LiarUtil.Gui.ViewModels.Pages"
+             xmlns:opt="using:LiarUtil.Gui.ViewModels.Options"
+             x:Class="LiarUtil.Gui.Views.Pages.HomeView"
+             x:DataType="vm:HomeViewModel">
+
+  <Panel>
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Margin="20,16,20,24" Spacing="16">
+
+        <m3c:Card Variant="Outlined" Padding="20">
+          <StackPanel Spacing="16">
+            <StackPanel Spacing="8">
+              <TextBlock Classes="label-large" Text="{Binding Loc.Function}" />
+              <ComboBox ItemsSource="{Binding Functions}"
+                        SelectedIndex="{Binding SelectedFunction}"
+                        HorizontalAlignment="Stretch" />
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+              <TextBlock Classes="label-large" Text="{Binding Loc.Mode}" />
+              <ComboBox ItemsSource="{Binding Modes}"
+                        SelectedIndex="{Binding SelectedMode}"
+                        HorizontalAlignment="Stretch" />
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+              <TextBlock Classes="label-large" Text="{Binding InputLabel}" />
+              <Grid ColumnDefinitions="*,Auto">
+                <TextBox Grid.Column="0"
+                         Watermark="{Binding InputLabel}"
+                         Text="{Binding InputPath}"
+                         VerticalContentAlignment="Center" />
+                <m3c:IconButton Grid.Column="1"
+                                Margin="8,0,0,0"
+                                Command="{Binding BrowseInputCommand}">
+                  <PathIcon Data="{x:Static icons:MaterialSymbols.FolderOpen}" />
+                </m3c:IconButton>
+              </Grid>
+            </StackPanel>
+
+            <StackPanel Spacing="8">
+              <TextBlock Classes="label-large" Text="{Binding OutputLabel}" />
+              <Grid ColumnDefinitions="*,Auto">
+                <TextBox Grid.Column="0"
+                         Watermark="{Binding OutputLabel}"
+                         Text="{Binding OutputPath}"
+                         VerticalContentAlignment="Center" />
+                <m3c:IconButton Grid.Column="1"
+                                Margin="8,0,0,0"
+                                Command="{Binding BrowseOutputCommand}">
+                  <PathIcon Data="{x:Static icons:MaterialSymbols.FileOpen}" />
+                </m3c:IconButton>
+              </Grid>
+            </StackPanel>
+
+            <ItemsControl ItemsSource="{Binding Options}">
+              <ItemsControl.DataTemplates>
+                <DataTemplate x:DataType="opt:ComboBoxOptionViewModel">
+                  <StackPanel Spacing="8"
+                              Margin="0,0,0,16"
+                              IsVisible="{Binding IsVisible}">
+                    <TextBlock Classes="label-large" Text="{Binding Header}" />
+                    <ComboBox ItemsSource="{Binding Items}"
+                              SelectedIndex="{Binding SelectedIndex}"
+                              HorizontalAlignment="Stretch" />
+                  </StackPanel>
+                </DataTemplate>
+                <DataTemplate x:DataType="opt:SwitchOptionViewModel">
+                  <m3c:SwitchSettingItem Headline="{Binding Header}"
+                                         IsChecked="{Binding IsChecked}"
+                                         IsVisible="{Binding IsVisible}"
+                                         Margin="0,0,0,16" />
+                </DataTemplate>
+                <DataTemplate x:DataType="opt:TextOptionViewModel">
+                  <StackPanel Spacing="8"
+                              Margin="0,0,0,16"
+                              IsVisible="{Binding IsVisible}">
+                    <TextBlock Classes="label-large" Text="{Binding Header}" />
+                    <TextBox Watermark="{Binding Watermark}"
+                             Text="{Binding Text}" />
+                  </StackPanel>
+                </DataTemplate>
+                <DataTemplate x:DataType="opt:SegmentedOptionViewModel">
+                  <m3c:SegmentedButtonGroup ItemsSource="{Binding Items}"
+                                            IsVisible="{Binding IsVisible}"
+                                            Margin="0,0,0,16">
+                    <m3c:SegmentedButtonGroup.ItemTemplate>
+                      <DataTemplate x:DataType="opt:SegmentedItemViewModel">
+                        <m3c:SegmentedButton Content="{Binding Content}"
+                                             IsChecked="{Binding IsChecked}" />
+                      </DataTemplate>
+                    </m3c:SegmentedButtonGroup.ItemTemplate>
+                  </m3c:SegmentedButtonGroup>
+                </DataTemplate>
+              </ItemsControl.DataTemplates>
+            </ItemsControl>
+
+            <Button Classes="outlined"
+                    Content="{Binding Loc.StartProcessing}"
+                    Command="{Binding ProcessCommand}"
+                    IsEnabled="{Binding !IsBusy}"
+                    HorizontalAlignment="Stretch" />
+          </StackPanel>
+        </m3c:Card>
+      </StackPanel>
+    </ScrollViewer>
+
+    <Panel IsVisible="{Binding IsBusy}">
+      <Border Background="#66000000" />
+      <m3c:DialogPane Title="{Binding Loc.Processing}"
+                      MinWidth="280"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center">
+        <StackPanel Spacing="16" HorizontalAlignment="Center">
+          <m3c:CircularProgressIndicator IsIndeterminate="True"
+                                         Width="48"
+                                         Height="48"
+                                         HorizontalAlignment="Center"
+                                         Foreground="{DynamicResource Md3PrimaryBrush}" />
+          <TextBlock Classes="body-medium"
+                     Text="{Binding StatusText}"
+                     HorizontalAlignment="Center" />
+        </StackPanel>
+      </m3c:DialogPane>
+    </Panel>
+  </Panel>
+
+</UserControl>

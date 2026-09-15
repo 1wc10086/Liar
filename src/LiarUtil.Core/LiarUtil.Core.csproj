@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>14.0</LangVersion>
+    <RootNamespace>LiarUtil.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../libs/AstcSharp/AstcSharp.csproj" />
+    <ProjectReference Include="../../libs/XMemCompressionDotNet/XMemCompressionDotNet.csproj" />
+    <PackageReference Include="KevInc.Audio.Xma2" />
+    <PackageReference Include="NLayer" />
+    <PackageReference Include="NVorbis" />
+    <PackageReference Include="SharpCompress" />
+    <PackageReference Include="SharpJaad.AAC" />
+    <PackageReference Include="SkiaSharp" />
+    <PackageReference Include="VCDiff" />
+    <InternalsVisibleTo Include="LiarUtil.Gui" />
+    <InternalsVisibleTo Include="LiarUtil.Cli" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wem/Resources/packed_codebooks.bin" />
+    <EmbeddedResource Include="Wem/Resources/packed_codebooks_aoTuV_603.bin" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="NavHome" xml:space="preserve"><value>首页</value></data>
+  <data name="NavSettings" xml:space="preserve"><value>设置</value></data>
+  <data name="Function" xml:space="preserve"><value>功能</value></data>
+  <data name="Mode" xml:space="preserve"><value>模式</value></data>
+  <data name="InputPath" xml:space="preserve"><value>输入路径</value></data>
+  <data name="OutputPath" xml:space="preserve"><value>输出路径</value></data>
+  <data name="OriginalFile" xml:space="preserve"><value>变动前文件</value></data>
+  <data name="ModifiedFile" xml:space="preserve"><value>变动后文件</value></data>
+  <data name="StartProcessing" xml:space="preserve"><value>开始处理</value></data>
+  <data name="Processing" xml:space="preserve"><value>正在处理</value></data>
+  <data name="ProcessingDone" xml:space="preserve"><value>处理完成</value></data>
+  <data name="ProcessingFailed" xml:space="preserve"><value>处理失败</value></data>
+  <data name="ElapsedSeconds" xml:space="preserve"><value>所用时间:{0:0.00}s</value></data>
+  <data name="ProcessingFailedMessage" xml:space="preserve"><value>处理失败:{0}</value></data>
+  <data name="FillInputOutputPaths" xml:space="preserve"><value>请填写输入路径和输出路径</value></data>
+  <data name="FillInfoPath" xml:space="preserve"><value>请填写信息描述文件路径</value></data>
+  <data name="FillPatchPath" xml:space="preserve"><value>请填写补丁文件路径</value></data>
+  <data name="StringEncoding" xml:space="preserve"><value>字符串编码</value></data>
+  <data name="Operation" xml:space="preserve"><value>处理方式</value></data>
+  <data name="Decode" xml:space="preserve"><value>解码</value></data>
+  <data name="Encode" xml:space="preserve"><value>编码</value></data>
+  <data name="Encrypt" xml:space="preserve"><value>加密</value></data>
+  <data name="Decrypt" xml:space="preserve"><value>解密</value></data>
+  <data name="Unpack" xml:space="preserve"><value>解包</value></data>
+  <data name="Pack" xml:space="preserve"><value>打包</value></data>
+  <data name="Split" xml:space="preserve"><value>分解</value></data>
+  <data name="Merge" xml:space="preserve"><value>合并</value></data>
+  <data name="Convert" xml:space="preserve"><value>转换</value></data>
+  <data name="ToFlash" xml:space="preserve"><value>至Flash</value></data>
+  <data name="FromFlash" xml:space="preserve"><value>自Flash</value></data>
+  <data name="UseFileHeaderInfo" xml:space="preserve"><value>使用文件头信息</value></data>
+  <data name="Length" xml:space="preserve"><value>长</value></data>
+  <data name="Width" xml:space="preserve"><value>宽</value></data>
+  <data name="TextureFormat" xml:space="preserve"><value>纹理格式</value></data>
+  <data name="Version" xml:space="preserve"><value>版本号</value></data>
+  <data name="ExportResources" xml:space="preserve"><value>导出资源</value></data>
+  <data name="WriteTextureHeader" xml:space="preserve"><value>写入纹理文件头</value></data>
+  <data name="Resolution" xml:space="preserve"><value>分辨率</value></data>
+  <data name="VersionVariant" xml:space="preserve"><value>版本变体</value></data>
+  <data name="UseCompression" xml:space="preserve"><value>是否使用压缩</value></data>
+  <data name="UseXml" xml:space="preserve"><value>是否使用 Xml</value></data>
+  <data name="Platform" xml:space="preserve"><value>版本平台</value></data>
+  <data name="InfoFile" xml:space="preserve"><value>信息描述文件</value></data>
+  <data name="InfoFilePath" xml:space="preserve"><value>信息描述文件路径</value></data>
+  <data name="InfoFormat" xml:space="preserve"><value>信息描述格式</value></data>
+  <data name="PatchFile" xml:space="preserve"><value>补丁文件</value></data>
+  <data name="PatchFilePath" xml:space="preserve"><value>补丁文件路径</value></data>
+  <data name="VersionNumber" xml:space="preserve"><value>版本编号</value></data>
+  <data name="UseRawPacket" xml:space="preserve"><value>使用原始子包</value></data>
+  <data name="TargetVersion" xml:space="preserve"><value>目的版本</value></data>
+  <data name="General" xml:space="preserve"><value>通用</value></data>
+  <data name="Language" xml:space="preserve"><value>语言</value></data>
+  <data name="LanguageEnglish" xml:space="preserve"><value>English</value></data>
+  <data name="LanguageChinese" xml:space="preserve"><value>中文</value></data>
+  <data name="RsbPtxHeadline" xml:space="preserve"><value>Rsb 解包打包 PTX0/149 格式</value></data>
+  <data name="ConvertImages" xml:space="preserve"><value>转换图像格式</value></data>
+  <data name="DeleteAfterConvert" xml:space="preserve"><value>转换后删除源文件</value></data>
+  <data name="Ptx0Headline" xml:space="preserve"><value>PTX0/149 图像解码格式</value></data>
+  <data name="RtonKeyHeadline" xml:space="preserve"><value>RTON 加密解密密钥</value></data>
+  <data name="CdatKeyHeadline" xml:space="preserve"><value>Cdat 加密解密密钥</value></data>
+  <data name="Key" xml:space="preserve"><value>密钥</value></data>
+  <data name="CanvasWidth" xml:space="preserve"><value>画布宽度</value></data>
+  <data name="CanvasHeight" xml:space="preserve"><value>画布高度</value></data>
+  <data name="ScaleX" xml:space="preserve"><value>横坐标缩放</value></data>
+  <data name="ScaleY" xml:space="preserve"><value>纵坐标缩放</value></data>
+  <data name="GeneratedImageName" xml:space="preserve"><value>生成图片名</value></data>
+  <data name="PamXflGeneration" xml:space="preserve"><value>Pam_Xfl 生成设置</value></data>
+  <data name="ReanimXflGeneration" xml:space="preserve"><value>Reanim_Xfl 生成设置</value></data>
+  <data name="PamXflResolution" xml:space="preserve"><value>Pam_Xfl 分辨率</value></data>
+  <data name="Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Confirm" xml:space="preserve"><value>确认</value></data>
+  <data name="InvalidInput" xml:space="preserve"><value>输入无效</value></data>
+  <data name="Browse" xml:space="preserve"><value>浏览</value></data>
+  <data name="SelectFile" xml:space="preserve"><value>选择文件</value></data>
+  <data name="SelectFolder" xml:space="preserve"><value>选择目录</value></data>
+  <data name="SelectOutput" xml:space="preserve"><value>选择输出</value></data>
+  <data name="PickedCopiedToPrivate" xml:space="preserve"><value>所选位置无法直接访问，已复制到应用私有目录</value></data>
+  <data name="OutputRedirectedToPrivate" xml:space="preserve"><value>输出将保存到应用私有目录:{0}</value></data>
+</root>

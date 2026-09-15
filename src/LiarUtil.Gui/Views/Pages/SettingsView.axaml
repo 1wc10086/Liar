@@ -1,0 +1,164 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:m3c="using:Material3.Avalonia.Controls"
+             xmlns:icons="using:Material3.Avalonia.Icons"
+             xmlns:vm="using:LiarUtil.Gui.ViewModels.Pages"
+             x:Class="LiarUtil.Gui.Views.Pages.SettingsView"
+             x:DataType="vm:SettingsViewModel">
+
+  <UserControl.Styles>
+    <Style Selector="TextBlock.section">
+      <Setter Property="FontSize" Value="14" />
+      <Setter Property="FontWeight" Value="Medium" />
+      <Setter Property="Foreground" Value="{DynamicResource Md3PrimaryBrush}" />
+      <Setter Property="Margin" Value="4,12,0,4" />
+    </Style>
+  </UserControl.Styles>
+
+  <Panel>
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Margin="20,16,20,24" Spacing="8">
+
+        <TextBlock Classes="section" Text="{Binding Loc.General}" />
+
+        <m3c:SettingItem Name="LanguageItem"
+                         Headline="{Binding Loc.Language}"
+                         SupportingText="{Binding Loc.CurrentLanguageName}"
+                         PointerPressed="OnLanguagePressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <TextBlock Classes="section" Text="Rsb" />
+
+        <m3c:SettingItem Name="RsbPtxItem"
+                         Headline="{Binding Loc.RsbPtxHeadline}"
+                         SupportingText="{Binding RsbPtxFormat}"
+                         PointerPressed="OnRsbPtxPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <m3c:SwitchSettingItem Headline="{Binding Loc.ConvertImages}"
+                               IsChecked="{Binding RsbConvertImages, Mode=TwoWay}" />
+
+        <m3c:SwitchSettingItem Headline="{Binding Loc.DeleteAfterConvert}"
+                               IsChecked="{Binding RsbDeleteAfterConvert, Mode=TwoWay}" />
+
+        <TextBlock Classes="section" Text="Ptx" />
+
+        <m3c:SettingItem Name="Ptx0Item"
+                         Headline="{Binding Loc.Ptx0Headline}"
+                         SupportingText="{Binding Ptx0Format}"
+                         PointerPressed="OnPtx0Pressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <TextBlock Classes="section" Text="Rton" />
+
+        <m3c:SettingItem Headline="{Binding Loc.RtonKeyHeadline}"
+                         SupportingText="{Binding RtonKey}"
+                         PointerPressed="OnRtonKeyPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <TextBlock Classes="section" Text="Cdat" />
+
+        <m3c:SettingItem Headline="{Binding Loc.CdatKeyHeadline}"
+                         SupportingText="{Binding CdatKey}"
+                         PointerPressed="OnCdatKeyPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <TextBlock Classes="section" Text="{Binding Loc.PamXflGeneration}" />
+
+        <m3c:SettingItem Headline="{Binding Loc.Resolution}"
+                         SupportingText="{Binding PamXflResolution}"
+                         PointerPressed="OnPamXflResolutionPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <TextBlock Classes="section" Text="{Binding Loc.ReanimXflGeneration}" />
+
+        <m3c:SettingItem Headline="{Binding Loc.CanvasWidth}"
+                         SupportingText="{Binding XflWidth}"
+                         PointerPressed="OnXflWidthPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <m3c:SettingItem Headline="{Binding Loc.CanvasHeight}"
+                         SupportingText="{Binding XflHeight}"
+                         PointerPressed="OnXflHeightPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <m3c:SettingItem Headline="{Binding Loc.ScaleX}"
+                         SupportingText="{Binding XflScaleX}"
+                         PointerPressed="OnXflScaleXPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <m3c:SettingItem Headline="{Binding Loc.ScaleY}"
+                         SupportingText="{Binding XflScaleY}"
+                         PointerPressed="OnXflScaleYPressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+        <m3c:SettingItem Headline="{Binding Loc.GeneratedImageName}"
+                         SupportingText="{Binding XflLabelName}"
+                         PointerPressed="OnXflLabelNamePressed">
+          <m3c:SettingItem.Trailing>
+            <PathIcon Data="{x:Static icons:MaterialSymbols.ChevronRight}" />
+          </m3c:SettingItem.Trailing>
+        </m3c:SettingItem>
+
+      </StackPanel>
+    </ScrollViewer>
+
+    <Panel IsVisible="{Binding IsValueDialogOpen}">
+      <Border Background="#66000000" />
+      <m3c:DialogPane Title="{Binding ValueDialogTitle}"
+                      MinWidth="320"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center">
+        <StackPanel Spacing="16" Width="280">
+          <TextBox Watermark="{Binding ValueDialogWatermark}"
+                   Text="{Binding ValueInput}" />
+          <TextBlock Classes="body-small"
+                     Text="{Binding Loc.InvalidInput}"
+                     Foreground="{DynamicResource Md3ErrorBrush}"
+                     IsVisible="{Binding IsValueInvalid}" />
+          <StackPanel Orientation="Horizontal"
+                      Spacing="8"
+                      HorizontalAlignment="Right">
+            <Button Classes="text"
+                    Content="{Binding Loc.Cancel}"
+                    Command="{Binding CancelValueCommand}" />
+            <Button Classes="filled"
+                    Content="{Binding Loc.Confirm}"
+                    Command="{Binding ConfirmValueCommand}" />
+          </StackPanel>
+        </StackPanel>
+      </m3c:DialogPane>
+    </Panel>
+  </Panel>
+
+</UserControl>

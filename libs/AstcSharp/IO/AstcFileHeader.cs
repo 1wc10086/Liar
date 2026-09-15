@@ -1,0 +1,128 @@
+using System.Buffers.Binary;
+using AstcSharp.Core;
+
+namespace AstcSharp.IO;
+
+/// <summary>
+/// The 16 byte ASTC file header
+/// </summary>
+/// <remarks>
+/// ASTC block and decoded image dimensions in texels.
+///
+/// For 2D images the Z dimension must be set to 1.
+///
+/// Note that the image is not required to be an exact multiple of the compressed block
+/// size; the compressed data may include padding that is discarded during decompression.
+/// </remarks>
+internal readonly record struct AstcFileHeader(byte BlockWidth, byte BlockHeight, byte BlockDepth, int ImageWidth, int ImageHeight, int ImageDepth)
+{
+    public const uint Magic = 0x5CA1AB13;
+    public const int SizeInBytes = 16;
+
+    // Image dimensions are stored as 24-bit little-endian fields (spec), so each must fit in 24 bits.
+    private const int MaxImageDimension = 0xFFFFFF;
+
+    // 2D footprints from the ASTC spec. 3D footprints are not supported.
+    private static readonly (byte Width, byte Height)[] Valid2DFootprints =
+    [
+        (4, 4), (5, 4), (5, 5), (6, 5), (6, 6),
+        (8, 5), (8, 6), (8, 8),
+        (10, 5), (10, 6), (10, 8), (10, 10),
+        (12, 10), (12, 12)
+    ];
+
+    public static AstcFileHeader FromMemory(Span<byte> data)
+    {
+        if (data.Length < SizeInBytes)
+        {
+            throw new ArgumentException($"ASTC header data must be at least {SizeInBytes} bytes.", nameof(data));
+        }
+
+        // ASTC header is 16 bytes:
+        // - magic (4),
+        // - blockdim (3),
+        // - xsize,y,z (each 3 little-endian bytes)
+        uint magic = BinaryPrimitives.ReadUInt32LittleEndian(data);
+        if (magic != Magic)
+        {
+            throw new ArgumentException($"Invalid ASTC file magic: expected 0x{Magic:X8}.", nameof(data));
+        }
+
+        byte blockWidth = data[4];
+        byte blockHeight = data[5];
+        byte blockDepth = data[6];
+
+        // Only 2D footprints are supported, so block depth must be 1.
+        if (blockDepth != 1)
+        {
+            throw new NotSupportedException($"ASTC 3D block footprints are not supported (block depth = {blockDepth})");
+        }
+
+        if (!IsValid2DFootprint(blockWidth, blockHeight))
+        {
+            throw new NotSupportedException($"Unsupported ASTC block dimensions: {blockWidth}x{blockHeight}");
+        }
+
+        int imageWidth = data[7] | (data[8] << 8) | (data[9] << 16);
+        int imageHeight = data[10] | (data[11] << 8) | (data[12] << 16);
+        int imageDepth = data[13] | (data[14] << 8) | (data[15] << 16);
+
+        ArgumentOutOfRangeException.ThrowIfLessThanOrEqual(imageWidth, 0);
+        ArgumentOutOfRangeException.ThrowIfLessThanOrEqual(imageHeight, 0);
+        ArgumentOutOfRangeException.ThrowIfLessThanOrEqual(imageDepth, 0);
+
+        // Guard against callers that compute a 4-byte-per-pixel RGBA32 output buffer.
+        long totalPixels = (long)imageWidth * imageHeight;
+        if (totalPixels > int.MaxValue / BlockInfo.ChannelsPerPixel)
+        {
+            throw new ArgumentOutOfRangeException(nameof(data), "ASTC image dimensions exceed the maximum supported size");
+        }
+
+        return new AstcFileHeader(
+            BlockWidth: blockWidth,
+            BlockHeight: blockHeight,
+            BlockDepth: blockDepth,
+            ImageWidth: imageWidth,
+            ImageHeight: imageHeight,
+            ImageDepth: imageDepth);
+    }
+
+    /// <summary>
+    /// Serialises this header into the first <see cref="SizeInBytes"/> bytes of
+    /// <paramref name="data"/> in the ASTC layout — the inverse of <see cref="FromMemory"/>:
+    /// magic (4 bytes, little-endian), block width/height/depth (1 byte each), then image
+    /// width/height/depth (3 little-endian bytes each).
+    /// </summary>
+    public void WriteTo(Span<byte> data)
+    {
+        if (data.Length < SizeInBytes)
+        {
+            throw new ArgumentException($"ASTC header buffer must be at least {SizeInBytes} bytes.", nameof(data));
+        }
+
+        BinaryPrimitives.WriteUInt32LittleEndian(data, Magic);
+        data[4] = this.BlockWidth;
+        data[5] = this.BlockHeight;
+        data[6] = this.BlockDepth;
+        WriteUInt24LittleEndian(data[7..], this.ImageWidth);
+        WriteUInt24LittleEndian(data[10..], this.ImageHeight);
+        WriteUInt24LittleEndian(data[13..], this.ImageDepth);
+    }
+
+    /// <summary>
+    /// Writes <paramref name="value"/> as a 24-bit little-endian field. Throws rather than silently
+    /// truncate a dimension that does not fit, since the readback (<see cref="FromMemory"/>) masks to
+    /// 24 bits and the corruption would otherwise be invisible.
+    /// </summary>
+    private static void WriteUInt24LittleEndian(Span<byte> data, int value)
+    {
+        ArgumentOutOfRangeException.ThrowIfNegative(value);
+        ArgumentOutOfRangeException.ThrowIfGreaterThan(value, MaxImageDimension);
+        data[0] = (byte)value;
+        data[1] = (byte)(value >> 8);
+        data[2] = (byte)(value >> 16);
+    }
+
+    private static bool IsValid2DFootprint(byte width, byte height)
+        => Array.Exists(Valid2DFootprints, footprint => footprint == (width, height));
+}
